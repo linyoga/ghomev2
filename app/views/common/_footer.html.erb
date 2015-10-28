@@ -24,11 +24,11 @@
                     </div><!--footer col end-->
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col margin-btm-20">
-                            <h3>Latest tweet</h3>
-                         <!-- SnapWidget -->
-                        <!-- SnapWidget -->
-                            <iframe src="http://snapwidget.com/sl/?u=ZWxpdGUuZWFofGlufDIwMHwzfDN8fHllc3wyMHxub25lfG9uU3RhcnR8eWVzfG5v&ve=281015" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height:230px"></iframe>
+                            <h3> recent Instagram</h3>
+                            <% @photos.each do |photo| %>
+                        <%= image_tag photo.images.thumbnail.url %>
                         </div>
+                        <% end %>
                     </div><!--footer col end-->
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col margin-btm-20">

@@ -25,27 +25,40 @@
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col margin-btm-20">
                             <h3> recent Instagram</h3>
+                            <div class = "flexslider">
+                                <ul class = "slides">
                             <% @photos.each do |photo| %>
-                        <%= image_tag photo.images.thumbnail.url %>
-                        </div>
-                        <% end %>
+                            <li><%= image_tag(photo.images.standard_resolution.url, :class => "img-responsive") %>
+                                <p class = "flex-caption">
+                                   <% if photo.caption %>
+                                   <%= photo.caption.text %>
+                                   <% else %>
+                                    <%=  %></p>
+                                    <% end %>
+                            <% end %>
+                                </ul>
+                            </div>
+                            </div>
                     </div><!--footer col end-->
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col margin-btm-20">
                             <h3>Follow us</h3>
                             <ul class=" list-inline social-btn">
-                                <li><a href="#"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On googleplus"></i></a></li>
+                                <li><a href="https://www.facebook.com/Elite.AH"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
+                                <li><a href="https://instagram.com/elite.eah/"><i class="ion-social-instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On Instagram"></i></a></li>
+                                <li><a href="https://instagram.com/elite.eah/"><i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On googleplus"></i></a></li>
                             </ul>
                         </div> 
                     </div><!--footer col end-->
                     <div class="col-md-3 margin-btm-20">
                         <div class="footer-col">
                             <h3>contact info</h3>
-                            <p><i class="ion-home"></i> pearl tower,3rd floor,jaipur,302012</p>
-                            <p><i class="ion-iphone"></i> +91 9887568614</p>
-                            <p><i class="ion-email"></i> mail@domain.com</p>
+                            <p><i class="ion-home"></i> 桃園市桃園區民生路495號之9 32043</p>
+                            <p><a href="https://goo.gl/maps/aG9WhkB8BAn" target="_blank"><i class="ion-ios-location-outline" data-toggle="tooltip" data-placement="top">取得方位</a></i></p>
+                            <p><i class="ion-iphone"></i>03-3363252</p>
+                            <p><i class="ion-email"></i> elite.eah@gmail.com</p>
+                            <p><i class="ion-ios-time-outline"></i>24小時保母駐館，每日9:30 ~ 22:00 開放參觀</p>
+                            <p><i class="ion-ios-paw-outline"></i>桃市特寵業字第411號</p>
                         </div>
 
                     </div><!--footer col end-->
@@ -64,11 +77,12 @@
                         </div>
                         <div class="col-md-6 ">
                             <ul class="list-inline footer-nav">
-                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="index.html">HOME</a></li>
                                 <li><a href="faqs.html">住宿</a></li>
                                 <li><a href="blog-full.html">安親</a></li>
-                                <li><a href="pricing.html">洗澡</a></li>
+                                <li><a href="pricing.html">美容SPA</a></li>
                                 <li><a href="contact.html">問與答</a></li>
+                                <li><a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank">預約</a></li>
                             </ul>
                         </div>
                     </div>

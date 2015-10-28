@@ -7,7 +7,9 @@
 */
 /* Basic Styles
 ================================================== */
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 body {
+  font-family: 'cwTeXHei', sans-serif;
   font-family: "Roboto", sans-serif;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -128,13 +130,13 @@ input[type='submit'] {
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background-color: #004b87;
+  background-color: #0FAF97;
 }
 
 ::selection {
   color: #fff;
   text-shadow: none;
-  background-color: #004b87;
+  background-color: #0FAF97;
 }
 
 p, blockquote {
@@ -249,6 +251,7 @@ input[type="color"]:focus,
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: "Roboto", sans-serif;
+  font-family: 'cwTeXHei', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -347,6 +350,7 @@ h3.heading-sec {
   box-shadow: 0 5px 6px -6px #ccc;
   width: 100%;
   padding: 5px 0;
+  min-height: 100px;
 }
 
 .navbar {
@@ -355,6 +359,7 @@ h3.heading-sec {
   -ms-border-radius: 0px;
   border-radius: 0px;
   margin-bottom: 0px;
+
 }
 
 .navbar-brand {
@@ -362,7 +367,6 @@ h3.heading-sec {
   font-weight: 700;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 7px;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -382,10 +386,11 @@ h3.heading-sec {
 
 .navbar-default .navbar-nav > li > a {
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+  font-family: 'cwTeXHei', sans-serif;
 }
 
 .navbar-default .navbar-nav > li.social-nav i {
@@ -407,7 +412,7 @@ h3.heading-sec {
 /*============================*/
 .navbar .dropdown-menu {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
   min-width: 190px;
   background-color: #fff;
   border: none;
@@ -430,10 +435,11 @@ h3.heading-sec {
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  padding: 0;
 }
 
 .navbar .dropdown-menu li a:hover {
-  background: #004b87;
+  background: #0FAF97;
   color: #fff;
 }
 
@@ -656,7 +662,7 @@ h3.heading-sec {
 }
 
 #content-region-2 {
-  background: url("../../assets/img/img-2.jpg") no-repeat;
+  background: url("/assets/img-2.jpg") no-repeat;
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
@@ -700,7 +706,7 @@ h3.heading-sec {
 
 h4.portfolio-post-title {
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -710,8 +716,7 @@ h4.portfolio-post-title {
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 10px;
-  color: #999999;
+  font-size: 12px;
 }
 
 .portfolio-desc .theme-btn-default {

@@ -1,0 +1,10 @@
+<h2>修改最新消息</h2>
+<%= simple_form_for [:admin, @post] do |f| %>
+<div class = "form-group">
+  <%= f.input :title, label: "標題", error: '需要輸入標題' %>
+  <%= f.input :content, label: "文章內容", error: "需要輸入文章內容" %>
+  </div>
+  <div class="form-actions">
+      <%= f.submit "Submit", disable_with: "Submiting...", class: "btn btn-primary"%>
+    </div> 
+ <% end %>

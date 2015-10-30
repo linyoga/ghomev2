@@ -1,5 +1,7 @@
 class Admin::PostsController < ApplicationController
   layout "admin"
+  before_action :authenticate_user!
+  before_action :admin_required
   def index
     @posts = Post.all
   end

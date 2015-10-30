@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'high_voltage', '~> 2.4.0'
 gem "instagram"
 gem "simple_form"
+gem "redcarpet"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

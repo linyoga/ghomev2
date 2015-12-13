@@ -2,6 +2,7 @@ class Admin::PostsController < ApplicationController
   layout "admin"
   before_action :authenticate_user!
   before_action :admin_required
+  before_action :find_photos
   def index
     @posts = Post.all
   end

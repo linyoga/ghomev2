@@ -9,7 +9,7 @@
 ================================================== */
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 body {
-  font-family: 'cwTeXHei', sans-serif;
+  font-family: MyFonts; 
   font-family: "Roboto", sans-serif;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -251,7 +251,8 @@ input[type="color"]:focus,
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: "Roboto", sans-serif;
-  font-family: 'cwTeXHei', sans-serif;
+  font-family: MyFonts;
+  font-weight: 500;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -397,10 +398,10 @@ h2.heading-sec {
 .navbar-default .navbar-nav > li > a {
   color: #000;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-family: 'cwTeXHei', sans-serif;
+  font-family: MyFonts;
 }
 
 .navbar-default .navbar-nav > li.social-nav i {
@@ -435,10 +436,11 @@ h2.heading-sec {
 
 .navbar .dropdown-menu li a {
   color: #888;
+  font-family: MyFonts;
   font-family: "Roboto", sans-serif;
   padding: 9px 20px;
   border-bottom: 1px solid #e7e7e7;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
   -moz-transition: all 0.3s ease-in;
@@ -527,7 +529,7 @@ h2.heading-sec {
 
 .slider-overlay {
   background: rgba(0, 0, 0, 0.4);
-  background-image: url("../../assets/img/pattern.png");
+  background-image: image-url('pattern.png');
   background-repeat: repeat;
   position: absolute;
   top: 0;
@@ -538,12 +540,23 @@ h2.heading-sec {
 
 .slider-text {
   text-align: center;
+    padding-top: 60px;
 }
+
 
 .slider-text h1 {
   color: #fff;
   margin-top: 150px;
   font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slider-text h3 {
+  color: #fff;
+  font-size: 35px;
   font-weight: 400;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -564,6 +577,7 @@ h2.heading-sec {
 
 .slide-btn {
   margin-top: 40px;
+  font-family: MyFonts;
   font-family: "Roboto", sans-serif;
   font-style: normal !important;
 }
@@ -672,7 +686,7 @@ h2.heading-sec {
 }
 
 #content-region-2 {
-  background: url("/assets/img-2.jpg") no-repeat;
+  background: url("/assets/ghome.jpg") no-repeat;
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
@@ -1014,9 +1028,10 @@ h4.portfolio-post-title {
 
 /*************************************buttons for bizwrap theme********************************/
 .btn {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: MyFonts;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   text-shadow: none;
   text-transform: uppercase;
   -moz-transition: all 0.3s ease-in;
@@ -1101,7 +1116,7 @@ h4.portfolio-post-title {
 
 /**************************************testimonials******************************************/
 .testimonials p.testi-text {
-  color: #fff;
+  color: #ffbe9f;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -1133,7 +1148,7 @@ h4.portfolio-post-title {
 
 .footer-col p {
   font-size: 14px;
-  color: #b3b3b3;
+  color: #fff;
 }
 
 .post-list li a {
@@ -1209,7 +1224,7 @@ h4.portfolio-post-title {
 
 /****************breadcrumbs*********************************************/
 .page-tree-bg {
-  background-image: url(../img/bread-bg.png);
+  background-image: url(../assets/bread-bg.png);
   background-color: #004b87;
   padding: 100px 0;
   width: 100%;
@@ -1574,7 +1589,7 @@ h3.heading-progress {
 ***********************************************************************************/
 @media (max-width: 768px) {
   .slider-text h1 {
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 2em;
   }
 
@@ -1785,8 +1800,8 @@ a.carousel-control i {
 }
 /**************footer option css here********************/
 #footer-option {
-  font-family: 'cwTeXHei', sans-serif;
-  background: #121214;
+  font-family: MyFonts;
+  background: #34495e;
   border-top: 8px solid #004b87;
   margin-top: 50px;
   padding: 80px 0 0;
@@ -1833,8 +1848,8 @@ a.carousel-control i {
 }
 
 .footer-copyright {
-  background: #0C0C0C;
-  border-top: 4px solid #111;
+  background: #004b87;
+  border-top: 4px solid #08192D;
   margin-top: 40px;
   padding: 30px 0 30px;
 }
@@ -1873,15 +1888,16 @@ a.carousel-control i {
   }
 }
 .flex-caption {
-  width: 96%;
+  width: 101%;
   padding: 2%;
   left: 0;
   bottom: 0;
+  background: rgba(0,0,0,.5);
   color: #fff;
-  background: rgba(0,0,0,.3);
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   font-size: 14px;
+  font-color: #fff;
   line-height: 18px;
-  text-shadow: 1px 1px 0px #000000;
 }
 /*********************header option 2***************************/
 .navbar-inverse {
@@ -1974,6 +1990,7 @@ a.carousel-control i {
   color: #fff;
   font-size: 20px;
   text-align: center;
+  font-family: MyFonts;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;

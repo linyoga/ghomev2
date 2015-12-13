@@ -1,67 +1,40 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-        <title>bizwrap</title>
-        <meta name="description" content="HTML5 & CSS3">
-        <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
-        <!--google  font family-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
     <body>
         <section id="slider-sec" class="slider-reg">
             <div class="main-flex-slider">
                 <ul class="slides">
                     <li>
                         <figure>
-
-                            <img src="assets/img-1.jpg" class="img-responsive" alt="slider-img-1">
+                            <%=image_tag('slider-1.jpg', class:"img-responsive",alt:"安親DAYCARE")%>
                             <figcaption class="slider-overlay ">
                                 <div class="slider-text animated fadeInDown">
-                                    <h1>Easy customization theme</h1>
-                                    <p>
-                                        Bizwrap theme comes with easy customization
-                                    </p>
-                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">Purchase Now</a></p>
+                                    <h1>安親DAYCARE</h1>
+                                    <h3>不想讓你的寶貝自己在家嗎？</h3>
+                                    <p class="slide-btn"><a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-white btn-lg">馬上預約</a></p>
                                 </div>
                             </figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="assets/img-2.jpg" class="img-responsive" alt="slider-img-1">
+                            <%=image_tag('slider-3.jpg', class:"img-responsive",alt:"住宿HOTEL")%>
                             <figcaption class="slider-overlay">
                                 <div class="slider-text">
-                                    <h1>clean and modern design</h1>
-                                    <p>
-                                        Bizwrap is a Useful theme that you can use for your Business.
-                                    </p>
-                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">View Portfolio</a></p>
+                                    <h1>住宿HOTEL</h1>
+                                   <h3>安全、像家、但是擁有更多同伴。</h3>
+                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">預約專線</a></p>
                                 </div>
                             </figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="assets/img-3.jpg" class="img-responsive" alt="slider-img-1">
+                            <%=image_tag('slider-2.jpg', class:"img-responsive",alt:"美容GROOMING")%>
                             <figcaption class="slider-overlay">
                                 <div class="slider-text">
-                                    <h1>Perfect for Small Projects</h1>
-                                    <p>
-                                        Bizwrap mainly design for small business projects.
-                                    </p>
-                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">Contact us</a></p>
+                                    <h1>美容GROOMING</h1>
+                                    <h3>專業的美容師，讓寶貝們更有自信。</h3>
+                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">瞭解更多</a></p>
+                            
                                 </div>
                             </figcaption>
                         </figure>
@@ -82,27 +55,13 @@
                     <div class="portfolio-sec">
                         <div class="portfolio-thumnail">
                             <a href="portfolio-single.html">
-                                <img src="assets/work-1.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h4 class="portfolio-post-title">住宿HOTEL</h4>
-                            <span class="portfolio-post-cat">提供給你最舒適及最安心的環境</span>
-                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">More detail</a></h4>
-                        </div>
-                    </div>
-                </div><!--portfolio item -->
-                <div class="col-md-4 col-sm-6 margin-btm-40">
-                    <div class="portfolio-sec">
-                        <div class="portfolio-thumnail">
-                            <a href="portfolio-single.html">
-                                <img src="assets/work-2.jpg" class="img-responsive" alt="">
+                                <img src="assets/service-1.jpg" class="img-responsive" alt="寵物安親">
                             </a>
                         </div>
                         <div class="portfolio-desc text-center">
                             <h4 class="portfolio-post-title">安親DAYCARE</h4>
                             <span class="portfolio-post-cat">讓你的毛小孩們有個愉快的時間</span>
-                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">More detail</a></h4>
+                            <h4><%= link_to("瞭解更多", daycare_path,class: "btn theme-btn-default btn-lg")%></h4>
                         </div>
                     </div>
                 </div><!--portfolio item -->
@@ -110,13 +69,27 @@
                     <div class="portfolio-sec">
                         <div class="portfolio-thumnail">
                             <a href="portfolio-single.html">
-                                <img src="assets/work-3.jpg" class="img-responsive" alt="">
+                          <img src="assets/service-2.jpg" class="img-responsive" alt="寵物住宿">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc text-center">
+                            <h4 class="portfolio-post-title">住宿HOTEL</h4>
+                            <span class="portfolio-post-cat">提供給你最舒適及最安心的環境</span>
+                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">瞭解更多</a></h4>      
+                        </div>
+                    </div>
+                </div><!--portfolio item -->
+                <div class="col-md-4 col-sm-6 margin-btm-40">
+                    <div class="portfolio-sec">
+                        <div class="portfolio-thumnail">
+                            <a href="portfolio-single.html">
+                                <img src="assets/service-3.jpg" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="portfolio-desc text-center">
                             <h4 class="portfolio-post-title">美容SPA</h4>
-                            <span class="portfolio-post-cat">使用100%純天然茶樹精油洗浴乳，讓你的毛小孩洗個舒適。</span>
-                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">More detail</a></h4>
+                            <span class="portfolio-post-cat">使用純天然茶樹精油洗浴乳，讓寶貝們洗個舒適。</span>
+                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">瞭解更多</a></h4>
                         </div>
                     </div>
                 </div><!--portfolio item -->
@@ -132,8 +105,8 @@
                         <div class="testimonials">
                             <ul class="slides">
                                 <li>
-                                    <p class="testi-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus massa in mauris rhoncus aliquam. Suspendisse nec velit vestibulum, euismod quam id, pellentesque elit. Ut a interdum metus, vel dictum nibh."<p>
-                                        <span class="testi-person">John Doe - company inc  </span>
+                                    <p class="testi-text">謝謝momo 姐姐陪蓬蓬玩整個下午，他開心的咧，下次姐姐也要在喔！也謝謝所有人員的細心照顧，謝謝喔<p>
+                                        <span class="testi-person">蓬蓬媽媽 留  </span>
                                 </li>
                                 <li>
                                     <p class="testi-text">"Sed fringilla sem sed massa ullamcorper, vitae rutrum justo sodales. Cras sed iaculis enim. Sed aliquet viverra nisl a tristique. Curabitur vitae mauris sem. Pellentesque iaculis nibh leo, mattis aliquet arcu tincidunt at."<p>
@@ -164,7 +137,7 @@
                     <div class="news-sec">
                         <div class="news-thumnail">
                             <h4 class="blog-post-title">
-                                <%= post.title %>
+                                <%=link_to(post.title, post_path(post))%>
                             </h4>
                             <span class="news-post-cat"><%= post.created_at.strftime("%B %d, %Y") %></span>
                             <p><%= markdown(post.content) %></p>
@@ -183,21 +156,5 @@
                 </h3>
             </div>
         </div>
-
-         <!--scripts-->
-        <script src="assets/jquery.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/modernizr.custom.97074.js"></script>
-        <script src="assets/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/jquery.easing.1.3.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="assets/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script type='text/javascript' src='assets/js/jquery.placeholder.min.js'></script>
-        <script src="assets/jquery.sticky.js" type="text/javascript"></script>
-        <script src="assets/jquery.flexslider-min.js" type="text/javascript"></script>
-        <script src="assets/jquery.mixitup.min.js" type="text/javascript"></script>
-        <script src="assets/parallax.min.js" type="text/javascript"></script>
-        <script src="assets/wow.min.js" type="text/javascript"></script>
-        <script src="assets/app.js" type="text/javascript"></script>
-        <script src="assets/mailchimp-custom.js" type="text/javascript"></script>
     </body>
-</html>
+

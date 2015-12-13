@@ -1,14 +1,20 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :skip => :registrations
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
 
-  root 'home#index'
+  root :to => "posts#index"
 
-  resources :post
-  
+resources :posts
+
+controller :posts do
+  get :daycare
+  get :hotel
+  get :about
+end
+
   namespace :admin do
     resources :posts
   end

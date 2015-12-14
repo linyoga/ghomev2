@@ -10155,92 +10155,334 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  */
-
-
 /* Browser Resets
 *********************************/
-
+/* line 16, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
-.flexslider a:focus  {outline: none;}
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 20, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 /* Icon Fonts
 *********************************/
 /* Font-face Icons */
 @font-face {
-	font-family: 'flexslider-icon';
-	src:url('../fonts/flexslider-icon.eot');
-	src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/flexslider-icon.woff') format('woff'),
-		url('../fonts/flexslider-icon.ttf') format('truetype'),
-		url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'flexslider-icon';
+  src: url(/fonts/flexslider-icon.eot);
+  src: url(/fonts/fonts/flexslider-icon.eot?#iefix) format("embedded-opentype"), url(/fonts/fonts/flexslider-icon.woff) format("woff"), url(/fonts/fonts/flexslider-icon.ttf) format("truetype"), url(/fonts/fonts/flexslider-icon.svg#flexslider-icon) format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider {margin: 0; padding: 0;}
-.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: 100%; display: block;}
-.flex-pauseplay span {text-transform: capitalize;}
+/* line 40, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 42, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 43, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
 
 /* Clearfix for the .slides element */
-.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-html[xmlns] .slides {display: block;}
-* html .slides {height: 1%;}
+/* line 46, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 47, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 48, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+* html .slides {
+  height: 1%;
+}
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {display: block;}
+/* line 53, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider { margin: 0 0 60px; background: #fff; border: 4px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1; }
-.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
-.loading .flex-viewport { max-height: 300px; }
-.flexslider .slides { zoom: 1; }
-.carousel li { margin-right: 5px; }
+/* line 57, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  zoom: 1;
+}
+
+/* line 58, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 59, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 60, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 61, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.carousel li {
+  margin-right: 5px;
+}
 
 /* Direction Nav */
-.flex-direction-nav {*height: 0;}
-.flex-direction-nav a  { display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
-.flex-direction-nav .flex-prev { left: -50px; }
-.flex-direction-nav .flex-next { right: -50px; text-align: right; }
-.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
-.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
-.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
-.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
-.flex-direction-nav a.flex-next:before  { content: '\f002'; }
+/* line 64, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 65, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 66, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 67, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 68, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 69, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 70, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 71, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 72, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+}
+
+/* line 73, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
 
 /* Pause/Play */
-.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
-.flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
-.flex-pauseplay a:hover  { opacity: 1; }
-.flex-pauseplay a.flex-play:before { content: '\f003'; }
+/* line 76, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 77, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 78, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 79, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
-.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+/* line 82, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
 
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
-.flex-control-thumbs img:hover {opacity: 1;}
-.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+/* line 83, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 84, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 85, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 86, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 88, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 89, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 90, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 91, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 92, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
 
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
-  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+  /* line 95, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 96, /Users/linyoga/ghomev2/app/assets/stylesheets/flexslider.css.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
 }
 @charset "UTF-8";
 /*!
@@ -15226,7 +15468,6 @@ yx-axis
 /* line 12, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 body {
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -15237,12 +15478,12 @@ body {
   height: 100%;
 }
 
-/* line 25, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 24, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 html {
   -webkit-text-size-adjust: none;
 }
 
-/* line 29, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 28, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15250,17 +15491,17 @@ html {
   outline: none;
 }
 
-/* line 36, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 35, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a {
   text-decoration: none;
 }
 
-/* line 40, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 39, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 44, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 43, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a.hover-color {
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -15268,12 +15509,12 @@ a.hover-color {
   transition: all 0.3s ease-in;
 }
 
-/* line 51, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 50, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a.hover-color:hover {
   color: #004b87 !important;
 }
 
-/* line 55, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 54, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -15283,123 +15524,123 @@ img {
   transition: all 0.3s ease-in;
 }
 
-/* line 64, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 63, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 p.lead {
   font-weight: 400;
 }
 
-/* line 68, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 67, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 i {
   display: inline-block;
 }
 
 /*margin spaces*/
-/* line 73, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 72, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-10 {
   width: 100%;
   height: 10px;
   clear: both;
 }
 
-/* line 79, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 78, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-20 {
   width: 100%;
   height: 20px;
   clear: both;
 }
 
-/* line 85, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 84, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-30 {
   width: 100%;
   height: 30px;
   clear: both;
 }
 
-/* line 91, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 90, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-40 {
   width: 100%;
   height: 40px;
   clear: both;
 }
 
-/* line 97, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 96, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-50 {
   width: 100%;
   height: 50px;
   clear: both;
 }
 
-/* line 103, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 102, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .space-70 {
   width: 100%;
   height: 50px;
   clear: both;
 }
 
-/* line 109, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 108, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .margin-btm-20 {
   margin-bottom: 20px;
 }
 
-/* line 113, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 112, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .margin-btm-40 {
   margin-bottom: 40px;
 }
 
 /*--------padding------------*/
-/* line 118, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 117, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .padding-40 {
   padding: 40px 0;
 }
 
-/* line 122, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 121, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .no-padding {
   padding: 0px;
 }
 
 /* Enable custom submit button styling in Safari mobile */
-/* line 127, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 126, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 input[type='submit'] {
   -webkit-appearance: none;
 }
 
-/* line 131, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 130, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
   background-color: #004b87;
 }
 
-/* line 137, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 136, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 ::selection {
   color: #fff;
   text-shadow: none;
   background-color: #004b87;
 }
 
-/* line 143, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 142, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 p, blockquote {
   line-height: 23px;
 }
 
-/* line 147, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 146, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 p {
   font-weight: 400;
 }
 
-/* line 151, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 150, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 blockquote {
   font-style: italic;
 }
 
-/* line 155, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 154, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 iframe, fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 161, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 160, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .responsive-video {
   width: 100%;
   position: relative;
@@ -15407,7 +15648,7 @@ iframe, fieldset {
   padding-top: 50.25%;
 }
 
-/* line 168, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 167, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .responsive-video iframe {
   position: absolute;
   top: 0;
@@ -15419,7 +15660,7 @@ iframe, fieldset {
 /*==================== ========*/
 /*========= Forms =========*/
 /*============================*/
-/* line 179, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 178, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .form-box {
   padding: 15px;
   background: #fff;
@@ -15429,7 +15670,7 @@ iframe, fieldset {
   box-shadow: 0px 1px 2px #999;
 }
 
-/* line 188, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 187, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 select,
 textarea,
 input[type="text"],
@@ -15468,7 +15709,7 @@ input[type="color"],
   transition: all 0.3s ease-in;
 }
 
-/* line 226, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 225, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -15495,75 +15736,74 @@ input[type="color"]:focus,
 
 /* Typography
 ================================================== */
-/* line 252, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 251, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
-/* line 259, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 257, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-/* line 263, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 261, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h1 {
   font-size: 46px;
   line-height: 50px;
   margin-bottom: 20px;
 }
 
-/* line 269, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 267, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h2 {
   font-size: 35px;
   line-height: 40px;
   margin-bottom: 10px;
 }
 
-/* line 275, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 273, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h3 {
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 8px;
 }
 
-/* line 281, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 279, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h4 {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 4px;
 }
 
-/* line 287, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 285, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h5 {
   font-size: 17px;
   line-height: 24px;
 }
 
-/* line 292, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 290, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h6 {
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 297, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 295, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 em {
   font-style: italic;
 }
 
-/* line 301, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 299, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 305, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 303, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 small {
   font-size: 80%;
 }
 
-/* line 309, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 307, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h3.subtitle {
   font-weight: 300;
   font-size: 18px;
@@ -15571,7 +15811,7 @@ h3.subtitle {
   font-style: italic;
 }
 
-/* line 316, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 314, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h4.heading-mini {
   font-weight: 600;
   text-transform: uppercase;
@@ -15580,7 +15820,7 @@ h4.heading-mini {
   margin-bottom: 30px;
 }
 
-/* line 324, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 322, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h3.heading-sec {
   font-weight: 500;
   display: block;
@@ -15592,7 +15832,7 @@ h3.heading-sec {
   letter-spacing: 1px;
 }
 
-/* line 334, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 332, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h2.heading-sec {
   font-weight: 500;
   display: block;
@@ -15604,12 +15844,12 @@ h2.heading-sec {
   letter-spacing: 1px;
 }
 
-/* line 345, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 343, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .header-main {
   width: 100%;
 }
 
-/* line 349, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 347, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .intro-row h2 {
   font-weight: 500;
   text-transform: uppercase;
@@ -15617,7 +15857,7 @@ h2.heading-sec {
 }
 
 /*******************bootstrap overrides **************************/
-/* line 356, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 354, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default {
   background-color: #fff;
   border-color: #eeeeee;
@@ -15630,7 +15870,7 @@ h2.heading-sec {
   min-height: 100px;
 }
 
-/* line 368, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 366, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -15639,7 +15879,7 @@ h2.heading-sec {
   margin-bottom: 0px;
 }
 
-/* line 377, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 375, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-brand {
   color: #555 !important;
   font-weight: 700;
@@ -15647,46 +15887,45 @@ h2.heading-sec {
   text-transform: uppercase;
 }
 
-/* line 384, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 382, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #004b87;
   background-color: #fff;
 }
 
-/* line 389, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 387, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #fff;
   color: #004b87;
 }
 
-/* line 394, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 392, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #004b87;
   background-color: transparent;
 }
 
-/* line 399, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 397, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default .navbar-nav > li > a {
   color: #000;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-family: "MyFonts";
 }
 
-/* line 408, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 405, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-default .navbar-nav > li.social-nav i {
   font-size: 20px;
 }
 
-/* line 412, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 409, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse .navbar-nav > li.social-nav i {
   font-size: 20px;
 }
 
 /*sticky header*/
-/* line 417, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 414, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .sticky-nav {
   width: 100%;
   z-index: 999;
@@ -15695,7 +15934,7 @@ h2.heading-sec {
 /*============================*/
 /*======dropdowm menu=========*/
 /*============================*/
-/* line 425, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 422, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar .dropdown-menu {
   padding: 0;
   margin-top: 0;
@@ -15709,11 +15948,10 @@ h2.heading-sec {
   border-top: 2px solid #004b87 !important;
 }
 
-/* line 438, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 435, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar .dropdown-menu li a {
   color: #888;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   padding: 9px 20px;
   border-bottom: 1px solid #e7e7e7;
   font-weight: 600;
@@ -15726,24 +15964,24 @@ h2.heading-sec {
   padding: 0;
 }
 
-/* line 454, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 450, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar .dropdown-menu li a:hover {
   background: #004b87;
   color: #fff;
 }
 
 /*top bar*/
-/* line 460, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 456, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .top-bar {
   background-color: #f9f9f9;
 }
 
-/* line 464, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 460, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .top-bar .info {
   margin: 0px;
 }
 
-/* line 468, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 464, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .top-bar .info li {
   font-size: 14px;
   display: table-cell;
@@ -15754,24 +15992,24 @@ h2.heading-sec {
   font-size: 13px;
 }
 
-/* line 478, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 474, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .top-bar .info li a {
   color: #555;
   margin-right: 10px;
 }
 
 /*flex slider*/
-/* line 484, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 480, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-reg {
   width: 100%;
 }
 
-/* line 488, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 484, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .main-flex-slider {
   position: relative;
 }
 
-/* line 492, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 488, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .main-flex-slider .flex-control-nav {
   bottom: 30px;
   margin: 0;
@@ -15779,7 +16017,7 @@ h2.heading-sec {
   z-index: 10;
 }
 
-/* line 499, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 495, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .main-flex-slider .flex-control-paging li a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -15791,13 +16029,13 @@ h2.heading-sec {
   height: 8px;
 }
 
-/* line 510, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 506, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .main-flex-slider .flex-control-paging li a.flex-active {
   background: transparent !important;
   border: 2px solid #004b87;
 }
 
-/* line 515, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 511, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-details .flex-control-paging li a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -15809,13 +16047,13 @@ h2.heading-sec {
   height: 8px;
 }
 
-/* line 526, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 522, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-details .flex-control-paging li a.flex-active {
   background: transparent !important;
   border: 2px solid #004b87;
 }
 
-/* line 531, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 527, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-overlay {
   background: rgba(0, 0, 0, 0.4);
   background-image: url(/assets/pattern-60d4c54e5d253460197149368c4d612241389e6c43f724aaa7186957e14753ae.png);
@@ -15827,13 +16065,13 @@ h2.heading-sec {
   right: 0;
 }
 
-/* line 542, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 538, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-text {
   text-align: center;
   padding-top: 60px;
 }
 
-/* line 548, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 544, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-text h1 {
   color: #fff;
   margin-top: 150px;
@@ -15844,51 +16082,39 @@ h2.heading-sec {
   text-align: center;
 }
 
-/* line 558, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
-.slider-text h3 {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 @media (max-width: 1024px) {
-  /* line 568, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 557, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-text h1 {
     margin-top: 100px;
   }
 }
-/* line 572, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 561, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-text p {
   color: #fff;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 20px;
+  font-family: "MyFonts";
+  font-size: 25px;
 }
 
-/* line 579, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 567, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slide-btn {
   margin-top: 40px;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-style: normal !important;
 }
 
-/* line 586, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 573, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slide-btn .btn-white {
   padding: 14px 25px;
 }
 
 /*-----------------------------------services and features------------------------------------------*/
-/* line 591, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 578, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-box {
   text-align: center;
   margin-bottom: 10px;
 }
 
-/* line 596, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 583, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-box i {
   color: #004b87;
   font-size: 44px;
@@ -15909,7 +16135,7 @@ h2.heading-sec {
   transition: all 0.3s ease-in;
 }
 
-/* line 616, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 603, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-box h1 {
   font-size: 18px;
   margin-bottom: 0px;
@@ -15918,7 +16144,7 @@ h2.heading-sec {
   text-transform: uppercase;
 }
 
-/* line 624, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 611, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-box:hover i {
   border-color: #004b87;
   background-color: #004b87;
@@ -15926,7 +16152,7 @@ h2.heading-sec {
 }
 
 /*services option 2*/
-/* line 631, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 618, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-icon i {
   color: #fff;
   width: 80px;
@@ -15942,36 +16168,36 @@ h2.heading-sec {
   display: inline-block;
 }
 
-/* line 646, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 633, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-text h4 {
   color: #000;
   margin-bottom: 15px;
 }
 
 /***services box new v1.4****/
-/* line 652, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 639, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-boxv2 {
   margin: 0;
 }
 
-/* line 655, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 642, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-boxv2 .servicev2-icon {
   float: left;
   width: 50px;
 }
 
-/* line 659, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 646, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-boxv2 .servicev2-icon i {
   color: #004b87;
   font-size: 30px;
 }
 
-/* line 663, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 650, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-boxv2 .servicev2-text {
   overflow: hidden;
 }
 
-/* line 666, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 653, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .services-boxv2 .servicev2-text h4 {
   color: #000;
   font-weight: 500;
@@ -15980,27 +16206,27 @@ h2.heading-sec {
 }
 
 /*features*/
-/* line 674, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 661, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .features h3 {
   font-weight: 400;
   color: #000;
   margin-bottom: 20px;
 }
 
-/* line 680, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 667, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .features p {
   color: #777;
 }
 
 /*==========================content regions==========================*/
-/* line 685, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 672, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #content-region-1 {
   background-color: #f5f5f5;
 }
 
-/* line 689, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 676, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #content-region-2 {
-  background-image: url(/assets/ghome-9b2ccfe51c44a9da24936082a26be2852010a9686b892cc87fb4fad7284b8858.jpg);
+  background: #004b87;
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
@@ -16009,7 +16235,7 @@ h2.heading-sec {
   position: relative;
 }
 
-/* line 699, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 686, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #content-region-2 .flex-control-paging li a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -16021,14 +16247,14 @@ h2.heading-sec {
   height: 8px;
 }
 
-/* line 710, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 697, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #content-region-2 .flex-control-paging li a.flex-active {
   background: transparent !important;
   border: 2px solid #004b87;
 }
 
 /*==========================portfolio ==========================*/
-/* line 716, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 703, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-sec {
   border: 1px solid #eeeeee;
   color: #000000;
@@ -16036,18 +16262,18 @@ h2.heading-sec {
   position: relative;
 }
 
-/* line 723, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 710, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-thumnail img {
   width: 100%;
   height: auto;
 }
 
-/* line 728, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 715, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-desc {
   padding: 10px 0;
 }
 
-/* line 732, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 719, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h4.portfolio-post-title {
   margin-bottom: 5px;
   font-size: 18px;
@@ -16056,7 +16282,7 @@ h4.portfolio-post-title {
   text-transform: uppercase;
 }
 
-/* line 740, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 727, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-post-cat {
   display: block;
   letter-spacing: 1px;
@@ -16064,12 +16290,12 @@ h4.portfolio-post-title {
   font-size: 12px;
 }
 
-/* line 747, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 734, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-desc .theme-btn-default {
   margin-bottom: -50px;
 }
 
-/* line 751, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 738, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .flexslider {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -16077,7 +16303,7 @@ h4.portfolio-post-title {
   box-shadow: none;
 }
 
-/* line 758, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 745, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-single-desc h3 {
   color: #000;
   font-size: 23px;
@@ -16085,14 +16311,14 @@ h4.portfolio-post-title {
 }
 
 /*mix it up filter*/
-/* line 765, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 752, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-filters {
   margin-bottom: 30px;
   list-style: none;
   padding: 0;
 }
 
-/* line 771, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 758, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-filters li {
   display: inline-block;
   border: 1px solid #eeeeee;
@@ -16103,14 +16329,14 @@ h4.portfolio-post-title {
   margin-bottom: 5px;
 }
 
-/* line 781, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 768, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .portfolio-filters li.active {
   background-color: #004b87;
   color: #fff;
   border-color: #004b87;
 }
 
-/* line 787, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 774, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #grid .mix {
   display: none;
   opacity: 0;
@@ -16118,7 +16344,7 @@ h4.portfolio-post-title {
 
 /***************************************news and blog sec**************************************/
 /*latest news*/
-/* line 794, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 781, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-sec {
   border: 1px solid #eeeeee;
   color: #000000;
@@ -16126,28 +16352,30 @@ h4.portfolio-post-title {
   padding-top: 15px;
 }
 
-/* line 801, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 788, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-title {
   margin-bottom: 5px;
   line-height: 20px;
 }
 
-/* line 806, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 793, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-title a {
-  font-size: 15px;
+  font-family: "MyFonts";
   font-weight: 500;
   letter-spacing: 0px;
   color: #000;
   text-transform: uppercase;
 }
 
-/* line 814, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 801, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-desc {
   padding: 10px 20px;
 }
 
-/* line 818, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 805, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-post-cat {
+  font-family: "MyFonts";
+  font-weight: 400;
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -16157,41 +16385,41 @@ h4.portfolio-post-title {
   margin-top: 10px;
 }
 
-/* line 828, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 817, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-desc p {
   color: #7a7a7a;
 }
 
-/* line 832, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 821, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-thumnail img {
   opacity: .8;
   filter: alpha(opacity=80);
 }
 
-/* line 837, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 826, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .news-thumnail img:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 /*blog page*/
-/* line 843, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 832, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-section {
   border: 1px solid #eee;
   padding: 15px 10px;
 }
 
-/* line 848, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 837, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-img {
   margin-bottom: 30px;
 }
 
-/* line 852, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 841, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-header {
   text-align: center;
 }
 
-/* line 856, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 845, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-header h3 {
   font-weight: 600;
   font-size: 24px;
@@ -16199,18 +16427,18 @@ h4.portfolio-post-title {
   margin-bottom: 10px;
 }
 
-/* line 863, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 852, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-header h3 a {
   color: #000;
 }
 
-/* line 867, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 856, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-info {
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* line 872, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 861, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-info span {
   font-weight: 600;
   font-size: 11px;
@@ -16218,28 +16446,28 @@ h4.portfolio-post-title {
   color: #999;
 }
 
-/* line 879, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 868, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-info span a {
   color: #666;
 }
 
-/* line 883, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 872, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-detail {
   margin-bottom: 30px;
 }
 
-/* line 887, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 876, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .blog-post-more {
   margin-bottom: 30px;
 }
 
 /*****************************sidebar css****************************/
-/* line 892, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 881, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .sidebar-box {
   margin-bottom: 30px;
 }
 
-/* line 896, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 885, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .sidebar-box h4 {
   color: #000;
   font-size: 13px;
@@ -16248,17 +16476,17 @@ h4.portfolio-post-title {
   margin-bottom: 15px;
 }
 
-/* line 904, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 893, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .sidebar-box h4:first-letter {
   border-bottom: 5px solid #004b87;
 }
 
-/* line 908, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 897, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .widget-search .search-form {
   position: relative;
 }
 
-/* line 912, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 901, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .widget-search .search-form i {
   position: absolute;
   top: 0;
@@ -16268,18 +16496,18 @@ h4.portfolio-post-title {
   color: #999;
 }
 
-/* line 921, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 910, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .cat-list {
   padding: 0px;
   list-style: none;
 }
 
-/* line 926, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 915, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .cat-list li {
   padding: 3px 0;
 }
 
-/* line 930, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 919, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .cat-list li a {
   color: #555;
   font-weight: 600;
@@ -16287,14 +16515,14 @@ h4.portfolio-post-title {
   text-transform: uppercase;
 }
 
-/* line 937, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 926, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .recent {
   width: 100%;
   margin-bottom: 20px;
   float: left;
 }
 
-/* line 943, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 932, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .recent span img {
   float: left;
   margin-right: 10px;
@@ -16302,7 +16530,7 @@ h4.portfolio-post-title {
   height: 70px;
 }
 
-/* line 950, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 939, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .recent p {
   margin: 0;
   line-height: 18px;
@@ -16310,12 +16538,12 @@ h4.portfolio-post-title {
   overflow: hidden;
 }
 
-/* line 957, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 946, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .recent p a {
   color: #555;
 }
 
-/* line 961, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 950, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .recent .recent-date {
   font-size: 10px;
   color: #999;
@@ -16323,13 +16551,13 @@ h4.portfolio-post-title {
   text-transform: uppercase;
 }
 
-/* line 968, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 957, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .sidebar-box .social-btn li a i {
   background-color: #000;
   color: #fff;
 }
 
-/* line 973, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 962, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .post-comment-wrapper {
   padding: 50px 0;
   display: block;
@@ -16337,7 +16565,7 @@ h4.portfolio-post-title {
   clear: both;
 }
 
-/* line 980, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 969, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .post-comment-wrapper h3 {
   color: #000;
   font-size: 20px;
@@ -16345,7 +16573,7 @@ h4.portfolio-post-title {
   margin-bottom: 20px;
 }
 
-/* line 987, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 976, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-box {
   margin: 15px 0;
   padding: 10px 0;
@@ -16353,7 +16581,7 @@ h4.portfolio-post-title {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 994, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 983, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-box img {
   float: left;
   margin-right: 15px;
@@ -16361,12 +16589,12 @@ h4.portfolio-post-title {
   height: 80px;
 }
 
-/* line 1001, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 990, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-box p {
   overflow: hidden;
 }
 
-/* line 1005, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 994, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-box span {
   font-size: 12px;
   font-weight: 800;
@@ -16376,13 +16604,13 @@ h4.portfolio-post-title {
   margin-bottom: 5px;
 }
 
-/* line 1014, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1003, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-form-wrapper {
   padding: 40px 0;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 1019, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1008, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-form-wrapper h3 {
   color: #000;
   font-size: 20px;
@@ -16390,17 +16618,16 @@ h4.portfolio-post-title {
   margin-bottom: 20px;
 }
 
-/* line 1026, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1015, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .comment-form-wrapper .form-control {
   margin-bottom: 15px;
 }
 
 /*************************************buttons for bizwrap theme********************************/
-/* line 1031, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1020, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn {
   font-weight: 600;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-shadow: none;
   text-transform: uppercase;
@@ -16420,14 +16647,14 @@ h4.portfolio-post-title {
   letter-spacing: 1px;
 }
 
-/* line 1054, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1042, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn:hover, .btn:focus {
   color: #fff;
   outline: none;
 }
 
 /*button white for colored background*/
-/* line 1060, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1048, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn-white {
   background-color: transparent;
   color: #fff;
@@ -16438,26 +16665,26 @@ h4.portfolio-post-title {
   border: 2px solid #fff;
 }
 
-/* line 1070, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1058, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn-white:hover {
   background-color: #fff;
   color: #222;
 }
 
-/* line 1075, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1063, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn-big {
   padding: 14px 25px;
 }
 
 /*button default*/
-/* line 1080, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1068, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .theme-btn-default {
   background-color: #fff;
   border: 1px solid #eeeeee;
   color: #555;
 }
 
-/* line 1086, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1074, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .theme-btn-default:hover, .theme-btn-default:focus {
   color: #fff;
   background-color: #000;
@@ -16465,27 +16692,27 @@ h4.portfolio-post-title {
 }
 
 /*theme color button*/
-/* line 1093, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1081, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .theme-btn-color {
   background-color: #004b87;
   border-color: #004b87;
   color: #fff;
 }
 
-/* line 1099, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1087, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .theme-btn-color:hover {
   color: #fff;
   background-color: #000;
   border-color: #000;
 }
 
-/* line 1105, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1093, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn-sweet-alert {
   margin: 5px;
 }
 
 /***btn radius***/
-/* line 1110, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1098, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .btn-radius {
   padding: 12px 50px;
   -webkit-border-radius: 30px;
@@ -16495,28 +16722,29 @@ h4.portfolio-post-title {
 }
 
 /**************************************testimonials******************************************/
-/* line 1119, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1107, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .testimonials p.testi-text {
-  color: #ffbe9f;
+  font-family: "MyFonts";
+  color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
-/* line 1126, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1115, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .testimonials span.testi-person {
   font-weight: 500;
   color: #fff;
 }
 
 /**********************************************footer*****************************************/
-/* line 1132, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1121, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #footer {
   background-color: #000000;
   padding: 60px 0;
 }
 
-/* line 1137, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1126, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col h3 {
   font-size: 15px;
   font-weight: 600;
@@ -16526,18 +16754,18 @@ h4.portfolio-post-title {
   letter-spacing: 2px;
 }
 
-/* line 1146, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1135, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col h3:first-letter {
   border-bottom: 5px solid #004b87;
 }
 
-/* line 1150, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1139, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col p {
   font-size: 14px;
   color: #fff;
 }
 
-/* line 1155, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1144, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .post-list li a {
   color: #b3b3b3;
   font-weight: 400;
@@ -16547,7 +16775,7 @@ h4.portfolio-post-title {
   border-bottom: 1px solid #444;
 }
 
-/* line 1164, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1153, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col form .form-control {
   background-color: #111;
   border: none;
@@ -16555,44 +16783,44 @@ h4.portfolio-post-title {
   margin-bottom: 15px;
 }
 
-/* line 1171, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1160, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col form .form-control:focus {
   background-color: #333;
   border: none;
 }
 
-/* line 1176, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1165, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col form textarea {
   background-color: #111;
   border: none;
   color: #fff;
 }
 
-/* line 1182, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1171, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col form textarea:focus {
   background-color: #333;
   border: none;
 }
 
-/* line 1187, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1176, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col .social-btn li a i {
   color: #fff;
   border: 2px solid #fff;
 }
 
-/* line 1192, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1181, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col .social-btn li a i:hover {
   background-color: #004b87;
   border-color: #004b87;
 }
 
-/* line 1197, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1186, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-bottom {
   border-top: 1px solid #111;
   padding-top: 60px;
 }
 
-/* line 1202, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1191, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-bottom span {
   color: #fff;
   font-weight: 400;
@@ -16600,7 +16828,7 @@ h4.portfolio-post-title {
 }
 
 /*****************************social buttons************************/
-/* line 1209, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1198, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .social-btn li a i {
   width: 35px;
   height: 35px;
@@ -16614,15 +16842,15 @@ h4.portfolio-post-title {
   display: block;
 }
 
-/* line 1222, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1211, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .social-btn li a {
   display: block;
 }
 
 /****************breadcrumbs*********************************************/
-/* line 1227, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1216, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .page-tree-bg {
-  background-image: url(../assets/bread-bg.png);
+  background-image: url(/assets/bread-bg-e1d6435f22a34ccdcd3cecd592e7da6780a20692e63b13600df9231bdeb0d119.png);
   background-color: #004b87;
   padding: 100px 0;
   width: 100%;
@@ -16631,7 +16859,7 @@ h4.portfolio-post-title {
   background-attachment: fixed;
 }
 
-/* line 1237, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1226, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h3.page-tree-text {
   text-align: center;
   text-transform: uppercase;
@@ -16639,7 +16867,7 @@ h3.page-tree-text {
   margin: 0px;
 }
 
-/* line 1243, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1232, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h1.page-tree-text {
   text-align: center;
   text-transform: uppercase;
@@ -16648,19 +16876,19 @@ h1.page-tree-text {
 }
 
 /***********************bootstrap pagination override***************************/
-/* line 1251, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1240, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pagination li a {
   color: #999;
 }
 
-/* line 1255, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1244, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pagination li a:hover {
   color: #fff;
   background-color: #004b87;
   border-color: #004b87;
 }
 
-/* line 1261, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1250, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   z-index: 2;
   color: #fff;
@@ -16671,35 +16899,35 @@ h1.page-tree-text {
 
 /**************inner pages css**************************/
 /*about page*/
-/* line 1271, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1260, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .icon-list li {
   padding: 5px 0;
 }
 
-/* line 1275, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1264, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .icon-list li i {
   color: #004b87;
   margin-right: 10px;
 }
 
 /*team person*/
-/* line 1281, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1270, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-section {
   border: 1px solid #eeeeee;
 }
 
-/* line 1284, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1273, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-section img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 1289, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1278, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-desc {
   padding: 10px 10px;
 }
 
-/* line 1293, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1282, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-desc h3 {
   color: #000;
   font-weight: 800;
@@ -16708,7 +16936,7 @@ h1.page-tree-text {
   margin-bottom: 2px;
 }
 
-/* line 1301, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1290, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-desc span {
   font-weight: 700;
   text-transform: uppercase;
@@ -16717,43 +16945,43 @@ h1.page-tree-text {
   margin-left: 10px;
 }
 
-/* line 1309, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1298, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .person-desc p {
   text-align: left;
 }
 
-/* line 1313, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1302, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .team.social-btn li a i {
   color: #7a7a7a;
   border: 2px solid #7a7a7a;
 }
 
-/* line 1318, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1307, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .hire-sec .services-icon i {
   background-color: #004b87;
   color: #fff;
   margin-bottom: 20px;
 }
 
-/* line 1324, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1313, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .hire-sec .services-text .heading-mini {
   margin-bottom: 10px;
   color: #333;
 }
 
 /*process*/
-/* line 1330, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1319, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .process-box {
   text-align: center;
   padding: 30px 0;
 }
 
-/* line 1335, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1324, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .process-box h2 {
   font-size: 25px;
 }
 
-/* line 1339, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1328, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .process-box i {
   font-size: 54px;
   color: #004b87;
@@ -16761,14 +16989,14 @@ h1.page-tree-text {
 }
 
 /*progress bar*/
-/* line 1346, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1335, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 h3.heading-progress {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 3px;
 }
 
-/* line 1352, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1341, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .progress {
   height: 15px;
   line-height: 10px;
@@ -16783,7 +17011,7 @@ h3.heading-progress {
   border-radius: 0px;
 }
 
-/* line 1366, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1355, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .progress-bar {
   line-height: 10px;
   background: #004b87;
@@ -16794,23 +17022,23 @@ h3.heading-progress {
 }
 
 /*************************login or signup form********************/
-/* line 1376, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1365, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .my-login-form {
   padding: 30px 20px;
   border: 1px solid #eeeeee;
 }
 
-/* line 1381, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1370, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .form-btm-link a {
   color: #004b87;
 }
 
-/* line 1385, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1374, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .form-btm-link a:hover {
   text-decoration: underline;
 }
 
-/* line 1389, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1378, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .form-btm-link span {
   margin: 0px 20px;
   font-family: "Playfair Display", serif;
@@ -16819,67 +17047,67 @@ h3.heading-progress {
 }
 
 /*error page*/
-/* line 1397, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1386, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .error-digit {
   font-size: 50px;
 }
 
-/* line 1401, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1390, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .error-text h3 {
   font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
 /*contact*/
-/* line 1407, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1396, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .my-contact-form form input {
   background-color: #f7f7f7;
 }
 
-/* line 1411, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1400, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .my-contact-form textarea {
   background-color: #f7f7f7;
 }
 
-/* line 1415, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1404, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #map-canvas {
   width: 100%;
   height: 400px;
 }
 
 /******************pricing************************/
-/* line 1421, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1410, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-wrapper {
   border: 1px solid #eeeeee;
 }
 
-/* line 1425, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1414, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-head {
   padding: 20px 10px;
   background-color: #000000;
   text-align: center;
 }
 
-/* line 1431, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1420, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-head h3 {
   margin: 0px;
   color: #fff;
 }
 
-/* line 1436, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1425, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-rate {
   padding: 30px 10px;
   background-color: #004b87;
   text-align: center;
 }
 
-/* line 1442, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1431, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-rate h1 {
   color: #FFF;
   margin: 0px;
 }
 
-/* line 1447, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1436, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-rate h1 small {
   color: #E9E9E9;
   font-size: 10px;
@@ -16887,72 +17115,72 @@ h3.heading-progress {
   font-weight: 700;
 }
 
-/* line 1454, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1443, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-desc ul {
   padding-left: 0px;
   margin: 0;
 }
 
-/* line 1459, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1448, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-desc ul li {
   padding: 12px 20px;
   border-bottom: 1px solid #eeeeee;
   font-weight: 400;
 }
 
-/* line 1465, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1454, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-select {
   padding: 10px 20px;
   text-align: center;
 }
 
-/* line 1470, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1459, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .pricing-select a {
   display: block;
 }
 
-/* line 1474, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1463, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .price-faq-box {
   padding: 20px 0;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 1479, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1468, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .price-faq-box h3 {
   font-size: 20px;
 }
 
 /*****************bootstrap tabs overrides*****************************/
 /*tabs*/
-/* line 1485, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1474, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs {
   border-bottom: none;
 }
 
-/* line 1489, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1478, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li {
   margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
-  /* line 1494, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1483, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .tabs .nav-tabs li {
     width: 100%;
     float: none;
     margin-bottom: 2px;
   }
 
-  /* line 1500, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1489, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .tabs .nav-tabs li a {
     margin-right: 0 !important;
   }
 
-  /* line 1504, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1493, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .tabs .nav-tabs li.active a {
     border-bottom: 2px solid #dcdcdc !important;
   }
 }
-/* line 1508, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1497, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li a {
   background: #f7f7f7;
   margin-right: 2px;
@@ -16968,7 +17196,7 @@ h3.heading-progress {
   position: relative;
 }
 
-/* line 1523, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1512, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li a:after {
   content: "";
   display: block;
@@ -16979,7 +17207,7 @@ h3.heading-progress {
   height: 3px;
 }
 
-/* line 1533, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1522, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li a:before {
   content: "";
   display: block;
@@ -16990,17 +17218,17 @@ h3.heading-progress {
   height: 1px;
 }
 
-/* line 1543, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1532, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li a:hover {
   border-color: #f7f7f7;
 }
 
-/* line 1547, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1536, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs > li > a .fa {
   margin-right: 4px;
 }
 
-/* line 1551, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1540, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li.active a {
   color: #004b87;
   border-left-color: #eee;
@@ -17008,46 +17236,46 @@ h3.heading-progress {
   background: #fff;
 }
 
-/* line 1558, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1547, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li.active a:after {
   background: #004b87;
 }
 
-/* line 1562, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1551, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li.active a:before {
   background: #fff;
 }
 
-/* line 1566, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1555, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .nav-tabs li.active a:hover {
   border-bottom-color: #fff;
 }
 
-/* line 1570, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1559, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .tab-content {
   padding: 15px 8px;
   border: 1px solid #eee;
   background: #fff;
 }
 
-/* line 1576, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1565, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tab-content p {
   overflow: hidden;
 }
 
-/* line 1580, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1569, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .tab-content:before,
 .tabs .tab-content:after {
   content: " ";
   display: table;
 }
 
-/* line 1586, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1575, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .tab-content:after {
   clear: both;
 }
 
-/* line 1590, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1579, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .tabs .tab-content p:last-child {
   margin-bottom: 0;
 }
@@ -17056,18 +17284,18 @@ h3.heading-progress {
 *************************   Responsive css start here    ***************************
 ***********************************************************************************/
 @media (max-width: 768px) {
-  /* line 1598, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1587, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-text h1 {
     margin-top: 20px;
     font-size: 2em;
   }
 
-  /* line 1603, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1592, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-text p {
     display: none;
   }
 
-  /* line 1607, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1596, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .main-flex-slider .flex-control-nav {
     bottom: 10px;
     margin: 0;
@@ -17076,31 +17304,31 @@ h3.heading-progress {
   }
 }
 @media (max-width: 433px) {
-  /* line 1615, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1604, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-text h1 {
     margin-top: 30px;
     font-size: 16px;
   }
 }
 /************version v1.1 css here********************/
-/* line 1621, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1610, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .home-slider {
   width: 100%;
 }
 
-/* line 1625, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1614, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .carousel {
   position: relative;
 }
 
-/* line 1629, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1618, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .home-slider .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 1635, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1624, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .home-slider .carousel-inner .item {
   overflow: hidden;
   width: 100%;
@@ -17109,25 +17337,25 @@ h3.heading-progress {
   padding: 100px 0 0;
 }
 
-/* line 1643, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1632, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #item-1 {
   background-image: url(../../assets/img/img-5.jpg);
   width: 100%;
 }
 
-/* line 1648, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1637, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #item-2 {
   background-image: url(../../assets/img/img-6.jpg);
   width: 100%;
 }
 
-/* line 1653, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1642, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #item-3 {
   background-image: url(../../assets/img/img-4.jpg);
   width: 100%;
 }
 
-/* line 1658, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1647, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a.carousel-control {
   height: 50px;
   width: 50px;
@@ -17143,23 +17371,23 @@ a.carousel-control {
   cursor: pointer;
 }
 
-/* line 1673, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1662, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 a.carousel-control i {
   color: #fff;
 }
 
-/* line 1677, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1666, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper {
   margin-top: 100px;
 }
 
-/* line 1681, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1670, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper h1 {
   color: #fff;
   font-weight: 300;
 }
 
-/* line 1686, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1675, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper p {
   color: #fff;
   font-size: 20px;
@@ -17167,44 +17395,44 @@ a.carousel-control i {
   margin-bottom: 30px;
 }
 
-/* line 1693, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1682, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-2 {
   margin-top: 60px;
 }
 
-/* line 1697, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1686, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-2 h1 {
   color: #fff;
   font-weight: 300;
 }
 
-/* line 1702, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1691, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-2img {
   margin-top: 60px;
 }
 
-/* line 1706, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1695, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-2 p {
   color: #fff;
 }
 
-/* line 1710, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1699, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-video-wrapper {
   margin-top: 60px;
 }
 
-/* line 1714, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1703, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-3 {
   margin-top: 60px;
 }
 
-/* line 1718, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1707, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-3 h1 {
   color: #fff;
   font-weight: 300;
 }
 
-/* line 1723, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1712, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .slider-wrapper-3 p {
   color: #fff;
   font-size: 18px;
@@ -17212,7 +17440,7 @@ a.carousel-control i {
 }
 
 /**slider carousel delay**/
-/* line 1730, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1719, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-1 {
   -webkit-animation-delay: 300ms;
   -moz-animation-delay: none;
@@ -17220,7 +17448,7 @@ a.carousel-control i {
   -o-animation-delay: none;
 }
 
-/* line 1737, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1726, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-2 {
   -webkit-animation-delay: 600ms;
   -moz-animation-delay: none;
@@ -17228,7 +17456,7 @@ a.carousel-control i {
   -o-animation-delay: none;
 }
 
-/* line 1744, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1733, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-3 {
   -webkit-animation-delay: 900ms;
   -moz-animation-delay: none;
@@ -17236,7 +17464,7 @@ a.carousel-control i {
   -o-animation-delay: none;
 }
 
-/* line 1751, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1740, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-4 {
   -webkit-animation-delay: 1200ms;
   -moz-animation-delay: none;
@@ -17244,7 +17472,7 @@ a.carousel-control i {
   -o-animation-delay: none;
 }
 
-/* line 1758, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1747, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-5 {
   -webkit-animation-delay: 1500ms;
   -moz-animation-delay: none;
@@ -17252,7 +17480,7 @@ a.carousel-control i {
   -o-animation-delay: none;
 }
 
-/* line 1765, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1754, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .delay-6 {
   -webkit-animation-delay: 1800ms;
   -moz-animation-delay: none;
@@ -17261,51 +17489,51 @@ a.carousel-control i {
 }
 
 @media (max-width: 767px) {
-  /* line 1773, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1762, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-wrapper {
     text-align: center;
   }
 
-  /* line 1777, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1766, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-wrapper-2 {
     text-align: center;
     margin-top: 50px;
   }
 
-  /* line 1782, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1771, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-wrapper-3 {
     text-align: center;
     margin-top: 50px;
   }
 
-  /* line 1787, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1776, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .carousel-indicators {
     bottom: 20px;
   }
 }
 @media (max-width: 360px) {
-  /* line 1792, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1781, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   a.carousel-control {
     display: none;
   }
 
-  /* line 1796, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1785, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .carousel-inner .item {
     padding: 20px 0 0;
   }
 
-  /* line 1800, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1789, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .slider-wrapper, .slider-wrapper-2, .slider-wrapper-3 {
     margin-top: 20px;
   }
 
-  /* line 1804, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1793, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .carousel-indicators {
     bottom: 0px;
   }
 }
 /**************footer option css here********************/
-/* line 1809, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1798, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #footer-option {
   font-family: "MyFonts";
   background: #34495e;
@@ -17316,17 +17544,17 @@ a.carousel-control i {
   clear: both;
 }
 
-/* line 1819, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1808, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #footer-option .footer-col {
   font-size: 0.9em;
 }
 
-/* line 1823, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1812, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #footer-option .footer-col .theme-btn-color {
   height: 34px;
 }
 
-/* line 1827, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1816, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 #footer-option .footer-col .form-control {
   height: 34px;
   background-color: #eeeeee;
@@ -17334,35 +17562,35 @@ a.carousel-control i {
   margin-bottom: 0px;
 }
 
-/* line 1834, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1823, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col a.tweet-ac {
   display: block;
   color: #fff;
 }
 
-/* line 1839, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1828, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col .tweet-desc {
   margin: 5px 0;
 }
 
-/* line 1843, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1832, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col .tweet-desc i {
   margin-right: 10px;
 }
 
-/* line 1847, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1836, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col a.tweet-day {
   display: block;
   color: #fff;
   font-size: 0.9em;
 }
 
-/* line 1853, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1842, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-col hr {
   border-color: #333;
 }
 
-/* line 1857, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1846, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-copyright {
   background: #004b87;
   border-top: 4px solid #08192D;
@@ -17370,47 +17598,47 @@ a.carousel-control i {
   padding: 30px 0 30px;
 }
 
-/* line 1864, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1853, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-nav {
   margin: 0;
   padding: 0;
   text-align: right;
 }
 
-/* line 1870, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1859, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-nav li a {
   color: #fff;
   font-size: 0.9em;
 }
 
-/* line 1875, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1864, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-nav li a:hover {
   color: #004b87;
 }
 
-/* line 1879, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1868, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .footer-copyright span {
   font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
-  /* line 1884, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1873, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .footer-copyright .footer-logo {
     text-align: center;
     margin-bottom: 10px;
   }
 
-  /* line 1889, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1878, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .footer-copyright p {
     text-align: center;
   }
 
-  /* line 1893, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 1882, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .footer-copyright .footer-nav {
     text-align: center;
   }
 }
-/* line 1897, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1886, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .flex-caption {
   width: 101%;
   padding: 2%;
@@ -17425,7 +17653,7 @@ a.carousel-control i {
 }
 
 /*********************header option 2***************************/
-/* line 1910, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1899, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse {
   background-color: rgba(0, 0, 0, 0.9);
   border: none;
@@ -17441,7 +17669,7 @@ a.carousel-control i {
   width: 100%;
 }
 
-/* line 1925, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1914, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #eee;
   font-weight: 400;
@@ -17449,55 +17677,55 @@ a.carousel-control i {
   text-transform: uppercase;
 }
 
-/* line 1932, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1921, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #004b87;
   background-color: transparent;
 }
 
-/* line 1937, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1926, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #004b87;
   background-color: transparent;
 }
 
-/* line 1942, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1931, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: transparent;
   color: #004b87;
 }
 
 /******Version v1.2 css here********/
-/* line 1948, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1937, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .mas-boxes-inner {
   margin-bottom: 30px;
 }
 
-/* line 1952, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1941, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .mas-boxes-inner .mas-link {
   color: #004b87;
   display: inline-block;
   margin-bottom: 10px;
 }
 
-/* line 1958, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1947, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .mas-boxes-inner .mas-link i {
   margin-left: 7px;
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 1964, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1953, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .mas-boxes-inner .mas-link:hover {
   color: #999;
 }
 
-/* line 1968, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1957, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .direc-hover-box {
   overflow: hidden;
 }
 
-/* line 1972, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1961, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .direc-hover-box img {
   position: relative;
   overflow: hidden;
@@ -17507,7 +17735,7 @@ a.carousel-control i {
   border-radius: 4px;
 }
 
-/* line 1981, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1970, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .direc-hover-box a .direc-overlay {
   position: absolute;
   background: rgba(75, 75, 75, 0.7);
@@ -17519,7 +17747,7 @@ a.carousel-control i {
   border-radius: 4px;
 }
 
-/* line 1992, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1981, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .direc-overlay span {
   display: block;
   position: absolute;
@@ -17529,7 +17757,6 @@ a.carousel-control i {
   font-size: 20px;
   text-align: center;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -17537,13 +17764,13 @@ a.carousel-control i {
 /*.direc-hover-box:hover .direc-overlay{
     display: block;
 }*/
-/* line 2009, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 1997, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 body.boxed {
-  background: url(../img/bread-bg.png) repeat;
+  background-image: url(/assets/bread-bg-e1d6435f22a34ccdcd3cecd592e7da6780a20692e63b13600df9231bdeb0d119.png);
 }
 
 @media (min-width: 1200px) {
-  /* line 2014, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 2002, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .boxed-wrapper {
     margin: 0 auto;
     width: 1170px;
@@ -17555,7 +17782,7 @@ body.boxed {
     border-top: 4px solid #004b87;
   }
 }
-/* line 2025, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2013, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .boxed-wrapper .navbar-default.sticky {
   left: 0;
   top: 0;
@@ -17571,12 +17798,12 @@ body.boxed {
 MULTI LEVEL DROPDOWN CSS
 
 *********************/
-/* line 2040, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2028, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 2044, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2032, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -17589,17 +17816,17 @@ MULTI LEVEL DROPDOWN CSS
 }
 
 @media (max-width: 767px) {
-  /* line 2056, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 2044, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .dropdown-submenu > .dropdown-menu {
     padding-left: 20px;
   }
 }
-/* line 2060, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2048, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 2064, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2052, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu > a:after {
   top: 11px;
   right: 9px;
@@ -17612,12 +17839,12 @@ MULTI LEVEL DROPDOWN CSS
   font-family: FontAwesome;
 }
 
-/* line 2076, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2064, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 2080, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2068, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -17628,19 +17855,19 @@ MULTI LEVEL DROPDOWN CSS
 }
 
 @media (max-width: 767px) {
-  /* line 2090, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 2078, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .dropdown-submenu > .dropdown-menu {
     display: block;
     margin-left: 15px;
   }
 }
-/* line 2095, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2083, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .cta-bg {
   padding: 50px 0;
   background-color: #004b87;
 }
 
-/* line 2100, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2088, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .cta-bg h3 {
   color: #fff;
   text-transform: uppercase;
@@ -17648,20 +17875,20 @@ MULTI LEVEL DROPDOWN CSS
 }
 
 @media (min-width: 768px) {
-  /* line 2107, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+  /* line 2095, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
   .cta-bg a {
     margin-left: 100px;
   }
 }
 /**newsletter section**/
-/* line 2112, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2100, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section {
   text-align: center;
   padding: 60px 0;
   background-color: #f5f5f5;
 }
 
-/* line 2117, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2105, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section h3 {
   text-transform: uppercase;
   font-weight: 500;
@@ -17669,23 +17896,23 @@ MULTI LEVEL DROPDOWN CSS
   letter-spacing: 2px;
 }
 
-/* line 2123, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2111, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section p {
   margin-bottom: 30px;
 }
 
-/* line 2126, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2114, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section .form-control {
   margin-bottom: 15px;
 }
 
-/* line 2129, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2117, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section .error {
   color: #a84545;
   background-color: #ffb2b2;
 }
 
-/* line 2133, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
+/* line 2121, /Users/linyoga/ghomev2/app/assets/stylesheets/style.css.scss */
 .newsletter-section .success {
   color: green;
   border-color: green;

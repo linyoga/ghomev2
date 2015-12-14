@@ -1239,6 +1239,12 @@ h3.page-tree-text {
   color: #fff;
   margin: 0px;
 }
+h1.page-tree-text {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0px;
+}
 
 /***********************bootstrap pagination override***************************/
 .pagination li a {

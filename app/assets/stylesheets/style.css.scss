@@ -9,7 +9,7 @@
 ================================================== */
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 body {
-  font-family: MyFonts; 
+  font-family: "MyFonts"; 
   font-family: "Roboto", sans-serif;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -250,8 +250,8 @@ input[type="color"]:focus,
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  font-family: "MyFonts";
   font-family: "Roboto", sans-serif;
-  font-family: MyFonts;
   font-weight: 500;
 }
 
@@ -401,7 +401,7 @@ h2.heading-sec {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-family: MyFonts;
+  font-family: "MyFonts";
 }
 
 .navbar-default .navbar-nav > li.social-nav i {
@@ -436,7 +436,7 @@ h2.heading-sec {
 
 .navbar .dropdown-menu li a {
   color: #888;
-  font-family: MyFonts;
+  font-family: "MyFonts";
   font-family: "Roboto", sans-serif;
   padding: 9px 20px;
   border-bottom: 1px solid #e7e7e7;
@@ -577,7 +577,7 @@ h2.heading-sec {
 
 .slide-btn {
   margin-top: 40px;
-  font-family: MyFonts;
+  font-family: "MyFonts";
   font-family: "Roboto", sans-serif;
   font-style: normal !important;
 }
@@ -1029,7 +1029,7 @@ h4.portfolio-post-title {
 /*************************************buttons for bizwrap theme********************************/
 .btn {
   font-weight: 600;
-  font-family: MyFonts;
+  font-family: "MyFonts";
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-shadow: none;
@@ -1806,7 +1806,7 @@ a.carousel-control i {
 }
 /**************footer option css here********************/
 #footer-option {
-  font-family: MyFonts;
+  font-family: "MyFonts";
   background: #34495e;
   border-top: 8px solid #004b87;
   margin-top: 50px;
@@ -1996,7 +1996,7 @@ a.carousel-control i {
   color: #fff;
   font-size: 20px;
   text-align: center;
-  font-family: MyFonts;
+  font-family: "MyFonts";
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;

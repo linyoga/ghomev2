@@ -10,7 +10,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 body {
   font-family: "MyFonts"; 
-  font-family: "Roboto", sans-serif;
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -251,7 +250,6 @@ input[type="color"]:focus,
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -400,7 +398,6 @@ h2.heading-sec {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-family: "MyFonts";
 }
 
@@ -437,7 +434,6 @@ h2.heading-sec {
 .navbar .dropdown-menu li a {
   color: #888;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   padding: 9px 20px;
   border-bottom: 1px solid #e7e7e7;
   font-weight: 600;
@@ -554,14 +550,7 @@ h2.heading-sec {
   text-align: center;
 }
 
-.slider-text h3 {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 
 @media (max-width: 1024px) {
   .slider-text h1 {
@@ -570,15 +559,13 @@ h2.heading-sec {
 }
 .slider-text p {
   color: #fff;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 20px;
+ font-family: "MyFonts";
+  font-size: 25px;
 }
 
 .slide-btn {
   margin-top: 40px;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-style: normal !important;
 }
 
@@ -686,7 +673,7 @@ h2.heading-sec {
 }
 
 #content-region-2 {
-  background-image: image-url('ghome.jpg');
+  background: #004b87;
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
@@ -803,7 +790,7 @@ h4.portfolio-post-title {
 }
 
 .blog-post-title a {
-  font-size: 15px;
+  font-family: "MyFonts";
   font-weight: 500;
   letter-spacing: 0px;
   color: #000;
@@ -815,6 +802,8 @@ h4.portfolio-post-title {
 }
 
 .news-post-cat {
+  font-family: "MyFonts";
+  font-weight: 400;
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1030,7 +1019,6 @@ h4.portfolio-post-title {
 .btn {
   font-weight: 600;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-shadow: none;
   text-transform: uppercase;
@@ -1116,9 +1104,10 @@ h4.portfolio-post-title {
 
 /**************************************testimonials******************************************/
 .testimonials p.testi-text {
-  color: #ffbe9f;
+  font-family: "MyFonts";
+  color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -1224,7 +1213,7 @@ h4.portfolio-post-title {
 
 /****************breadcrumbs*********************************************/
 .page-tree-bg {
-  background-image: url(../assets/bread-bg.png);
+  background-image: image-url('bread-bg.png');
   background-color: #004b87;
   padding: 100px 0;
   width: 100%;
@@ -1997,7 +1986,6 @@ a.carousel-control i {
   font-size: 20px;
   text-align: center;
   font-family: "MyFonts";
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -2006,7 +1994,7 @@ a.carousel-control i {
     display: block;
 }*/
 body.boxed {
-  background: url(../img/bread-bg.png) repeat;
+  background-image: image-url('bread-bg.png');
 }
 
 @media (min-width: 1200px) {

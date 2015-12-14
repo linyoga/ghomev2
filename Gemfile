@@ -28,7 +28,7 @@ gem "simple_form"
 gem "redcarpet"
 gem "devise"
 gem 'jquery-turbolinks'
-
+gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

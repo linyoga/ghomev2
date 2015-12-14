@@ -14,6 +14,9 @@
 <%= yield %>
 
   <%= render :partial => "common/segment_io" %>
+    <%= javascript_include_tag "application" %>
+
+  <%= yield :javascripts %>
 </div>
 </body>
 </html>

@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  #layout "footer",:except => [:show]
-  layout "footer"
   before_action :find_photos
   def index
     @posts = Post.order("id DESC")

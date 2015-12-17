@@ -317,6 +317,22 @@ h4.heading-mini {
   color: #000;
   margin-bottom: 30px;
 }
+h3.heading-mini {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 30px;
+}
+h3.heading-mini-left {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
 
 h3.heading-sec {
   font-weight: 500;
@@ -1463,9 +1479,17 @@ h3.heading-progress {
   padding: 20px 0;
   border-bottom: 1px solid #eeeeee;
 }
+.price-faq-grooming{
+  padding: 20px 0;
+  padding-left: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
 
 .price-faq-box h3 {
   font-size: 20px;
+}
+.price-faq-grooming h3{
+ font-size: 20px;
 }
 
 /*****************bootstrap tabs overrides*****************************/

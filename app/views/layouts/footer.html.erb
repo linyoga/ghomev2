@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ghome</title>
+  <title>一家三口動物旅館</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-37128.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,7 +9,7 @@
           <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-        <title>Ghome</title>
+        <title>一家三口動物旅館</title>
         <meta name="description" content="HTML5 & CSS3">
         <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
         <!--google  font family-->
@@ -21,7 +21,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+<!--<%= render :partial => "common/segment_io" %> -->
 </head>
 <body>
 <div class= "container-fluid">
@@ -29,7 +29,7 @@
  <%= notice_message %>
 <%= yield %>
 </div>
-  <%= render :partial => "common/segment_io" %>
+  
   <%= render "common/footer" %>
   <%= javascript_include_tag "application" %>
 

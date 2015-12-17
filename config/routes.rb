@@ -13,6 +13,8 @@ controller :posts do
   get :daycare
   get :hotel
   get :about
+  get :grooming
+  get :faqs
 end
 
   namespace :admin do

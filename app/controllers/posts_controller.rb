@@ -15,4 +15,20 @@ class PostsController < ApplicationController
     
   end
 
+  def grooming
+
+  end
+
+  def hotel
+
+  end
+
+  def about
+
+  end
+
+  def faqs
+
+  end
+
 end

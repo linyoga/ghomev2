@@ -9,7 +9,7 @@
                                 <div class="slider-text animated fadeInDown">
                                     <h1>安親DAYCARE</h1>
                                     <p>不想讓你的寶貝自己在家嗎？</p>
-                                    <p class="slide-btn"><a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-white btn-lg">馬上預約</a></p>
+                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg", id = 'phonesignup'>預約專線</a></p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -21,7 +21,7 @@
                                 <div class="slider-text">
                                     <h1>住宿HOTEL</h1>
                                    <p>安全、像家、但是擁有更多同伴。</p>
-                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">預約專線</a></p>
+                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg",id = 'phonesignup'>預約專線</a></p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -33,7 +33,7 @@
                                 <div class="slider-text">
                                     <h1>美容GROOMING</h1>
                                     <p>專業的美容師，讓寶貝們更有自信。</p>
-                                    <p class="slide-btn"><a href="#" class="btn btn-white btn-lg">瞭解更多</a></p>
+                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg",id = 'phonesignup'>預約專線</a></p>
                             
                                 </div>
                             </figcaption>
@@ -42,7 +42,15 @@
                 </ul>
             </div>
         </section><!--main flex slider end-->
-        <div class="space-70"></div><div class="space-30"></div>
+            <div class="space-50"></div>
+        <div class="cta-bg">
+            <div class="container text-center">
+                <h3>貼心、溫暖、像家。
+                    <a href="https://linyoga.typeform.com/to/Cry25x" target = "_blank" class="btn btn-lg btn-white btn-radius" id = "reservation1">立即預約</a>
+                </h3>
+            </div>
+        </div>
+        <div class="space-70"></div>
 
         <div class="container">
             <div class="row">
@@ -53,9 +61,8 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 margin-btm-40">
                     <div class="portfolio-sec">
-                        <div class="portfolio-thumnail">
-                            <a href="portfolio-single.html">             
-                                <%=image_tag('service-1.jpg', class:"img-responsive",alt:"寵物安親Daycare")%>
+                        <div class="portfolio-thumnail">           
+                                <%= link_to image_tag('service-1.jpg', class:"img-responsive",alt:"寵物安親Daycare"),daycare_path %>
                             </a>
                         </div>
                         <div class="portfolio-desc text-center">
@@ -68,14 +75,13 @@
                 <div class="col-md-4 col-sm-6 margin-btm-40">
                     <div class="portfolio-sec">
                         <div class="portfolio-thumnail">
-                            <a href="portfolio-single.html">
-                                <%=image_tag('service-2.jpg', class:"img-responsive",alt:"寵物住宿pethotel")%>
+                                <%= link_to image_tag('service-2.jpg', class:"img-responsive",alt:"寵物住宿pethotel"), hotel_path %>
                             </a>
                         </div>
                         <div class="portfolio-desc text-center">
                             <h4 class="portfolio-post-title">住宿HOTEL</h4>
                             <span class="portfolio-post-cat">提供給你最舒適及最安心的環境</span>
-                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">瞭解更多</a></h4>      
+                            <h4><%= link_to("瞭解更多", hotel_path,class: "btn theme-btn-default btn-lg")%></h4> 
                         </div>
                     </div>
                 </div><!--portfolio item -->
@@ -83,20 +89,42 @@
                     <div class="portfolio-sec">
                         <div class="portfolio-thumnail">
                             <a href="portfolio-single.html">
-                                <%=image_tag('service-3.jpg', class:"img-responsive",alt:"寵物美容grooming")%>
+                                <%= link_to image_tag('service-3.jpg', class:"img-responsive",alt:"寵物美容grooming"), grooming_path %>
                             </a>
                         </div>
                         <div class="portfolio-desc text-center">
                             <h4 class="portfolio-post-title">美容SPA</h4>
                             <span class="portfolio-post-cat">使用純天然茶樹精油洗浴乳，讓寶貝們洗個舒適。</span>
-                            <h4><a href="portfolio-single.html" class="btn theme-btn-default btn-lg">瞭解更多</a></h4>
+                            <h4><%= link_to("瞭解更多", grooming_path,class: "btn theme-btn-default btn-lg")%></h4>
                         </div>
                     </div>
                 </div><!--portfolio item -->
            </div><!--row portfolio item-->
         </div><!--recent work container end-->
         <div class="space-70"></div>
-
+       <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="heading-sec">最新消息</h3>
+                </div>
+            </div><!--row-->
+            <div class="row">
+                <% @posts.first(3).each do |post| %>
+                <div class="col-md-4 col-sm-6 margin-btm-20">
+                    <div class="news-sec">
+                        <div class="news-thumnail">
+                            <h4 class="blog-post-title">
+                                <%=link_to(post.title, post_path(post))%>
+                            </h4>
+                            <span class="news-post-cat"><%= post.created_at.strftime("%B %d, %Y") %></span>
+                            <p><%= markdown(post.content) %></p>
+                        </div>
+                    </div>
+                </div><!--latest news items-->
+                <% end %>
+            </div><!--row end-->
+        </div><!--container recent news end-->
+                <div class="space-70"></div>
         <section id="content-region-2" class="padding-40 parallax-1">
             <div class="container">
                 <div class="row">
@@ -121,39 +149,28 @@
 
                 </div>
             </div>
-        </section> <!--testimonials section end here-->
-        <div class="space-70"></div>
+        </section> <!--testimonials section end here--> 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="heading-sec">最新消息</h3>
-                </div>
-            </div><!--row-->
-            <div class="row">
-                <% @posts.first(3).each do |post| %>
-                <div class="col-md-4 col-sm-6 margin-btm-20">
-                    <div class="news-sec">
-                        <div class="news-thumnail">
-                            <h4 class="blog-post-title">
-                                <%=link_to(post.title, post_path(post))%>
-                            </h4>
-                            <span class="news-post-cat"><%= post.created_at.strftime("%B %d, %Y") %></span>
-                            <p><%= markdown(post.content) %></p>
-                        </div>
-                    </div>
-                </div><!--latest news items-->
-                <% end %>
-            </div><!--row end-->
-        </div><!--container recent news end-->
-        <div class="space-50"></div>
-        </div>
-        <div class="cta-bg">
-            <div class="container text-center">
-                <h3>貼心、溫暖、像家
-                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius">開始預約</a>
-                </h3>
-            </div>
-        </div>
     </body>
-
+<script type="text/javascript">
+  var link = document.getElementById('reservation1');
+    analytics.trackLink(link, '表單預約', {
+    location: 'Center',
+    color: 'blue',
+    text: '開始預約',
+    CTA: 'form',
+    category: 'Home Page',
+    type: 'Button',
+    pageTitle: document.title
+  });
+  var link2 = document.getElementById('phonesignup');
+    analytics.trackLink(link2, '電話預約', {
+    location: 'Center',
+    color: 'blue',
+    text: '預約專線',
+    CTA: 'phone',
+    category: 'Home Page',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>  

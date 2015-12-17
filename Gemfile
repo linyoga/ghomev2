@@ -29,6 +29,7 @@ gem "redcarpet"
 gem "devise"
 gem 'jquery-turbolinks'
 gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
+gem 'seo_helper', '~> 1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

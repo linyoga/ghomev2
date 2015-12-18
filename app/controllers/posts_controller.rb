@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :find_photos
   def index
     @posts = Post.order("id DESC")
-     set_page_title "|安親|美容｜住宿"
+     set_page_title "安親｜住宿｜美容"
      set_page_description ("一家三口動物旅館首頁，我們有安親、美容、住宿優質服務。")
      set_page_keywords ('一家三口,安親,美容,住宿,寵物,homepage')
   end

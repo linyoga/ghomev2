@@ -6,7 +6,6 @@ set :repo_url, 'git@github.com:linyoga/ghomev2.git'
 
 set :rbenv_type, :user 
 set :rbenv_ruby, "2.2.3"
-set :rbenv_path, '~/.rbenv'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w(rake gem bundle ruby rails)
 set :rbenv_roles, :all 
@@ -14,7 +13,7 @@ set :rbenv_roles, :all
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '/home/rails/ghomev2'
+ set :deploy_to, '/home/deploy/ghomev2'
 
 # Default value for :scm is :git
 # set :scm, :git

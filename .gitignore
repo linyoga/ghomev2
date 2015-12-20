@@ -17,5 +17,4 @@
 /tmp
 
 config/config.yml
-config/initializers/instagram.rb
 .DS_store

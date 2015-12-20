@@ -54,6 +54,7 @@ end
 
 group :production do
   gem "pg"
+  gem "unicorn"
   gem "rails_12factor"
   gem "capistrano",  "~> 3.1", require: false
   gem "capistrano-rvm", "~> 0.1.1", require: false

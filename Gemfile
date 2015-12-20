@@ -55,6 +55,7 @@ end
 group :production do
   gem "pg"
   gem "rails_12factor"
+  gem 'mysql2', '~> 0.3.20'
   gem "capistrano",  "~> 3.1", require: false
   gem "capistrano-rvm", "~> 0.1.1", require: false
   gem "capistrano-rails", "~> 1.1", require: false

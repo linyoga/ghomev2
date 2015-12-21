@@ -31,6 +31,7 @@ gem 'jquery-turbolinks'
 gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 gem 'seo_helper', '~> 1.0'
 gem 'sitemap_generator'
+ gem "sqlite3"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -49,7 +50,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem "sqlite3"
+ 
   gem "capistrano",  "~> 3.1", require: false
   gem "capistrano-rvm", "~> 0.1.1", require: false
   gem "capistrano-rails", "~> 1.1", require: false

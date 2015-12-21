@@ -75,7 +75,7 @@
         <div class="cta-bg">
             <div class="container text-center">
                 <h3>不想讓你的寶貝自己在家嗎？
-                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius">開始預約</a>
+                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius" id = "reservation-daycare">開始預約</a>
                 </h3>
             </div>
         </div>         <!--about company row end-->
@@ -106,3 +106,15 @@
             </div>
         </section> <!--testimonials section end here-->
     </body>
+<script type="text/javascript">
+  var link = document.getElementById('reservation-daycare');
+    analytics.trackLink(link, '表單預約', {
+    location: 'Center',
+    color: 'blue',
+    text: '開始預約',
+    CTA: 'form',
+    category: 'daycare page',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script> 

@@ -41,7 +41,7 @@ gem 'therubyracer', platforms: :ruby
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test, :assets do
+group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -55,6 +55,7 @@ group :development, :test, :assets do
   gem "capistrano-rvm", "~> 0.1.1", require: false
   gem "capistrano-rails", "~> 1.1", require: false
   gem "capistrano-rbenv", "~> 2.0", require: false
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
 end
 
 group :production do

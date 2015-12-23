@@ -4,13 +4,14 @@
   <%= render_page_title_tag %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
  <%= render :partial => "common/segment_io" %>
-<%= render :partial => "common/myfont" %>
+
 <%= render :partial => "common/zopin" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <html lang="zh">
 </head>
 <body>
+  <%= render :partial => "common/myfont" %>
   <div class= "container-fluid">
     <%= render "common/navbar" %>
     <%= notice_message %>

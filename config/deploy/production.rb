@@ -21,7 +21,7 @@
  role :web, %w{deploy@188.166.209.152}
  role :db,  %w{deploy@188.166.209.152}
 
- server 'ghanimalcasa.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
+ server '188.166.209.152', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
 # Configuration
 # =============

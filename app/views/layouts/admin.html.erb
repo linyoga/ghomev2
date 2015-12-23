@@ -3,8 +3,8 @@
 <head>
   <%= render_page_title_tag %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
- <%= render :partial => "common/segment_io" %>
- <%= render :partial => "common/zopin" %>
+  <%= render :partial => "common/segment_io" %>
+  <%= render :partial => "common/zopin" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <html lang="zh">
@@ -16,7 +16,7 @@
     <%= notice_message %>
     <div class="pull-right" style="padding-bottom: 20px;">
     <% if user_signed_in? %>
-   <%= link_to("登出", destroy_user_session_path, method: :delete) %>
+  <%= link_to("登出", destroy_user_session_path, :method => :delete) %>
   <% else %>
   <%= link_to('登入', new_user_session_path) %>
   <% end %>
@@ -24,7 +24,9 @@
   <%= yield %>
 </div>
 <%= render "common/footer" %>
+<%= javascript_include_tag "application" %>
 
+  <%= yield :javascripts %>
          <!--scripts-->
         <script src="/js/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="/js/modernizr.custom.97074.js"></script>

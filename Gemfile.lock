@@ -171,6 +171,8 @@ GEM
       activemodel (> 4, < 5.1)
     sitemap_generator (5.1.0)
       builder
+    skylight (0.10.0)
+      activesupport (>= 3.0.0)
     spring (1.6.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -230,6 +232,7 @@ DEPENDENCIES
   seo_helper (~> 1.0)
   simple_form
   sitemap_generator
+  skylight
   spring
   sqlite3
   therubyracer

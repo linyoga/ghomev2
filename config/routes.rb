@@ -7,7 +7,14 @@ Rails.application.routes.draw do
 
   root :to => "posts#index"
 
+
+
+  
 resources :posts
+
+namespace :admin do
+  resources :posts
+  end
 
 controller :posts do
   get :daycare
@@ -17,9 +24,6 @@ controller :posts do
   get :faqs
 end
 
-  namespace :admin do
-    resources :posts
-  end
   
 
   # Example of regular route:

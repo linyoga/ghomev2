@@ -40,9 +40,11 @@ set :linked_files, %w(config/database.yml config/secrets.yml)
 # set :keep_releases, 5
 
 namespace :deploy do
-    task :restart, :roles => :web do
-    run "touch #{ current_path }/tmp/restart.txt"
-  end
+
+  desc "Restart Passenger app"
+    task :restart do
+    run "#{ try_sudo } touch #{ File.join(current_path, 'tmp', 'restart.txt') }"
+    end
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do

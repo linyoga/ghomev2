@@ -9,7 +9,9 @@
                                 <div class="slider-text animated fadeInDown">
                                     <h1>安親DAYCARE</h1>
                                     <p>不想讓你的寶貝自己在家嗎？</p>
-                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg", id = 'phonesignup'>預約專線</a></p>
+                                    <p class="slide-btn">
+                                    <%= link_to('瞭解更多',daycare_path, class: 'btn btn-white btn-lg', id: 'knowmore')%>
+                                    </p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -21,7 +23,8 @@
                                 <div class="slider-text">
                                     <h1>住宿HOTEL</h1>
                                    <p>安全、像家、但是擁有更多同伴。</p>
-                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg",id = 'phonesignup'>預約專線</a></p>
+                                    <p class="slide-btn"><%= link_to("瞭解更多", hotel_path,
+                                        class: "btn btn-white btn-lg", id: 'knowmore')%></p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -33,7 +36,8 @@
                                 <div class="slider-text">
                                     <h1>美容GROOMING</h1>
                                     <p>專業的美容師，讓寶貝們更有自信。</p>
-                                    <p class="slide-btn"><a href="tel:(03)3363252", target = "_blank", class="btn btn-white btn-lg",id = 'phonesignup'>預約專線</a></p>
+                                    <p class="slide-btn"><%= link_to("瞭解更多", grooming_path,
+                                        class: "btn btn-white btn-lg", id: 'knowmore')%></p>
                             
                                 </div>
                             </figcaption>
@@ -163,11 +167,11 @@
     type: 'Button',
     pageTitle: document.title
   });
-  var link2 = document.getElementById('phonesignup');
-    analytics.trackLink(link2, '電話預約', {
+  var link2 = document.getElementById('knowmore');
+    analytics.trackLink(link2, '瞭解更多', {
     location: 'Center',
     color: 'blue',
-    text: '預約專線',
+    text: '瞭解更多',
     CTA: 'phone',
     category: 'Home Page',
     type: 'Button',

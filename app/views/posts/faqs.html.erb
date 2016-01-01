@@ -15,17 +15,16 @@
                     <div class="sidebar-box">
                         <h4>categories</h4>
                         <ul class="cat-list">
-                            <li><%= link_to("Home", root_path)%></li>
-                                <li><%= link_to("住宿", hotel_path,) %></li>
-                                <li><%= link_to("安親", daycare_path,) %></li>
-                                <li><%= link_to("美容", grooming_path,) %></li>
+                            <li><%= link_to("Home", root_path,)%></li>
+                                <li><%= link_to("安親住宿前須知", anchor: "hotelknow") %></li>
+                                <li><%= link_to("美容須知", anchor: "groomingknow") %></li>
                                 <li><a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank">預約</a></li>
                         </ul>
                     </div><hr>
                   </div>  
                 <div class="col-md-8">    
                     <div class="space-40"></div>
-                    <h3 class="heading-mini">安親住宿前須知</h3> 
+                    <h3 class="heading-mini"><a id="hotelknow">安親住宿前須知</a></h3> 
                     <div class="row">
                         <div class="col-md-12 margin-btm-20">
                             <div class="price-faq-box">
@@ -83,7 +82,7 @@
                                 </ul>
                               </div><!-- faq box-->
                         </div>
-                          <h3 class="heading-mini-left">美容須知</h3> 
+                          <h3 class="heading-mini-left"><a id="groomingknow">美容須知</a></h3> 
                           <div class="row">
                          <div class="col-md-12 margin-btm-20">
                             <div class="price-faq-grooming">
@@ -91,6 +90,20 @@
                                 <ul>
                                   <li>
                                     有些貓咪不適合手吹 ，而可能使用烘箱或由專業獸醫師進行鎮定美容。
+                                  </li>
+                                </ul>
+                            </div><!--faq box-->
+                        </div>
+
+                        <div class="col-md-12 margin-btm-20">
+                            <div class="price-faq-grooming">
+                              <h3>附加服務</h3>
+                                <ul>
+                                  <li>
+                                    基礎洗護、精緻美容皆包含以下項目：剪指甲、修腳底毛、修腹部毛、修屁股毛、耳朵清潔保養。
+                                  </li>
+                                  <li>
+                                   如需單項服務，則每項服務收費如下：小型犬收費為NT50，中型犬收費為NT100，大型犬收費為NT150。
                                   </li>
                                 </ul>
                             </div><!--faq box-->
@@ -120,7 +133,7 @@
                                 </ul> 
                             </div><!-- faq box-->
                         </div>
-
+                        <p class="text-right"><%= link_to("back to top", anchor: "top") %></p>
                     </div>
                         </div>
                     </div>

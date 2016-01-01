@@ -162,7 +162,7 @@
         <div class="cta-bg">
             <div class="container text-center">
                 <h3>專業的美容師，讓寶貝們更有自信。
-                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius">開始預約</a>
+                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius" id = "reservation-grooming">馬上預約</a>
                 </h3>
             </div>
         </div>
@@ -193,3 +193,15 @@
             </div>
         </section> <!--testimonials section end here-->
     </body>
+<script type="text/javascript">
+  var link = document.getElementById('reservation-grooming');
+    analytics.trackLink(link, '表單預約', {
+    location: 'Center',
+    color: 'blue',
+    text: '馬上預約',
+    CTA: 'form',
+    category: 'grooming Page',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script> 

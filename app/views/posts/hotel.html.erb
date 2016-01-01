@@ -199,7 +199,7 @@
         <div class="cta-bg">
             <div class="container text-center">
                 <h3>安全、像家、但是擁有更多同伴。
-                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius">開始預約</a>
+                    <a href="https://linyoga.typeform.com/to/Cry25x", target = "_blank", class="btn btn-lg btn-white btn-radius" id = "reservation-hotel">開始預約</a>
                 </h3>
             </div>
         </div>         <!--about company row end-->
@@ -229,5 +229,17 @@
                 </div>
             </div>
         </section> <!--testimonials section end here-->
-              
     </body>
+
+<script type="text/javascript">
+  var link = document.getElementById('reservation-hotel');
+    analytics.trackLink(link, '表單預約', {
+    location: 'Center',
+    color: 'blue',
+    text: '開始預約',
+    CTA: 'form',
+    category: 'Hotel Page',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script> 

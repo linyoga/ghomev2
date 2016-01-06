@@ -25,7 +25,21 @@
                 </div>
             </div>
                 <div class="col-md-5">
-                    <h2 class="heading-mini">住宿價目表</h2>
+                 <p>
+                        一家三口動物旅館秉持著貼心、溫暖、像家：大小細節皆嚴謹的挑選，沒有冰冷鐵籠，提供給寶貝們友善的環境。
+                    </p>
+                    <br>
+                    <ul class="icon-list list-unstyled">
+                        <li><i class="ion-checkmark-round"></i> 日本Richell睡床、飲水器、圍籠。</li>
+                        <li><i class="ion-checkmark-round"></i> 寵物褓姆全天陪伴。</li>
+                        <li><i class="ion-checkmark-round"></i> 可選不關籠，提供寵物自由社交、進出房間(大、中、小型犬分區活動)</li>
+                        <li><i class="ion-checkmark-round"></i> 溫馨散步時間(依照住宿時間)</li>
+                        <li><i class="ion-checkmark-round"></i> 醫療級光觸媒紫外線空氣清淨機</li>
+                        <li><i class="ion-checkmark-round"></i> 每日詳細的褓母日誌，詳細記錄理學檢查 如體重、心跳、溫度。</li>
+
+                    </ul>
+                    <h5>第一次來嗎？請詳閱<%= link_to('住宿前須知',faqs_path(anchor: "hotelknow")) %> </h5>
+                   <h2 class="heading-mini">住宿價目表</h2>
                     <h5><div class="table-responsive">          
                     <table class="table table-bordered">
                         <thead>
@@ -53,6 +67,7 @@
                           </tr>
                         </tbody>
                       </table>
+                  </div>
                  <div class="table-responsive">          
                     <table class="table table-bordered">
                         <thead>
@@ -71,22 +86,7 @@
                         </tbody>
                       </table>
                       </div>
-                      </div>
-                    <p>
-                        一家三口動物旅館秉持著貼心、溫暖、像家：大小細節皆嚴謹的挑選，沒有冰冷鐵籠，提供給寶貝們友善的環境。
-                    </p>
-                    <br>
-                    <ul class="icon-list list-unstyled">
-                        <li><i class="ion-checkmark-round"></i> 日本Richell睡床、飲水器、圍籠。</li>
-                        <li><i class="ion-checkmark-round"></i> 寵物褓姆全天陪伴。</li>
-                        <li><i class="ion-checkmark-round"></i> 可選不關籠，提供寵物自由社交、進出房間(大、中、小型犬分區活動)</li>
-                        <li><i class="ion-checkmark-round"></i> 溫馨散步時間(依照住宿時間)</li>
-                        <li><i class="ion-checkmark-round"></i> 醫療級光觸媒紫外線空氣清淨機</li>
-                        <li><i class="ion-checkmark-round"></i> 每日詳細的褓母日誌，詳細記錄理學檢查 如體重、心跳、溫度。</li>
-
-                    </ul>
-                    <h5>第一次來嗎？請詳閱<%= link_to('住宿前須知',faqs_path(anchor: "hotelknow")) %> </h5>
-                </h5>
+                  </h5>
 
                 </div>
             </div>
@@ -95,22 +95,9 @@
             <div class="col-md-12">
                     <h4 class="heading-mini">住宿服務及環境</h4>
                 </div>
-
                 <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
-                       <%=image_tag('hotel-4.jpg', class:"img-responsive",alt:"貓房")%>
-                        <div class="person-desc">
-                            <h3>貓房</span></h3>
-
-                            <p>
-                                獨棟villa，不用擔心與其他貓咪們同住，給你家怕生的貓咪最安心自在的環境。
-                            </p>
-                        </div>
-                    </div><!--person section end-->
-                </div><!--person col end-->
-                 <div class="col-md-3 col-sm-6 margin-btm-20">
-                    <div class="person-section">
-                      <%=image_tag('hotel-2.jpg', class:"img-responsive",alt:"狗狗房")%>
+                      <%=image_tag('hotellife-10.jpg', class:"img-responsive",alt:"狗狗房")%>
                         <div class="person-desc">
                             <h3>狗狗房</span></h3>
 
@@ -122,7 +109,7 @@
                 </div>
                  <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
-                        <%=image_tag('hotellife-7.jpg', class:"img-responsive",alt:"大狗區")%>
+                        <%=image_tag('hotellife-8.jpg', class:"img-responsive",alt:"大狗區")%>
                         <div class="person-desc">
                             <h3>大狗區</span></h3>
 
@@ -131,6 +118,32 @@
                             </p>
                         </div>
                     </div><!--person section end-->
+                </div>
+                <div class="col-md-3 col-sm-6 margin-btm-20">
+                    <div class="person-section">
+                       <%=image_tag('hotellife-12.jpg', class:"img-responsive",alt:"貓房")%>
+                        <div class="person-desc">
+                            <h3>貓房</span></h3>
+
+                            <p>
+                                獨棟villa，不用擔心與其他貓咪們同住，給你家怕生的貓咪最安心自在的環境。
+                            </p>
+                        </div>
+                    </div><!--person section end-->
+                </div><!--person col end-->
+                 <div class="col-md-3 col-sm-6 margin-btm-20">
+                    <div class="person-section">
+                        <%=image_tag('hotellife-9.jpg', class:"img-responsive",alt:"貓咪散步區")%>
+                        <div class="person-desc">
+                            <h3>貓咪散步區</h3>
+
+                            <p>
+                                出門在外想要看看你家寶貝嗎？我們提供你24小時監視錄影，隨時都可連線觀看。
+                            </p>
+                        </div>
+                    </div><!--person section end-->
+                </div>
+                <div class="col-md-12">
                 </div>
                  <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
@@ -144,9 +157,19 @@
                         </div>
                     </div><!--person section end-->
                 </div>
-                <div class="col-md-12">
-                </div>
+                
+                <div class="col-md-3 col-sm-6 margin-btm-20">
+                    <div class="person-section">
+                        <%=image_tag('hotellife-7.jpg', class:"img-responsive",alt:"保姆日誌")%>
+                        <div class="person-desc">
+                            <h3>保姆日誌</span></h3>
 
+                            <p>
+                                詳細的保姆日誌，仔細紀錄你們寶貝的狀況，讓你出門在外也能像在他身邊。
+                            </p>
+                        </div>
+                    </div><!--person section end-->
+                </div>
                 <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
                        <%=image_tag('daycarelife-3.jpg', class:"img-responsive",alt:"日本Richell睡床")%>
@@ -171,30 +194,6 @@
                         </div>
                     </div><!--person section end-->
                 </div>
-                 <div class="col-md-3 col-sm-6 margin-btm-20">
-                    <div class="person-section">
-                        <%=image_tag('hotellife-7.jpg', class:"img-responsive",alt:"保姆日誌")%>
-                        <div class="person-desc">
-                            <h3>保姆日誌</span></h3>
-
-                            <p>
-                                詳細的保姆日誌，仔細紀錄你們寶貝的狀況，讓你出門在外也能像在他身邊。
-                            </p>
-                        </div>
-                    </div><!--person section end-->
-                </div>
-                 <div class="col-md-3 col-sm-6 margin-btm-20">
-                    <div class="person-section">
-                        <%=image_tag('hotellife-2.jpg', class:"img-responsive",alt:"貓咪散步區")%>
-                        <div class="person-desc">
-                            <h3>貓咪散步區</h3>
-
-                            <p>
-                                出門在外想要看看你家寶貝嗎？我們提供你24小時監視錄影，隨時都可連線觀看。
-                            </p>
-                        </div>
-                    </div><!--person section end-->
-                </div>
           <div class="space-70"></div>
         <div class="cta-bg">
             <div class="container text-center">
@@ -215,12 +214,8 @@
                                         <span class="testi-person">蓬蓬媽媽 留  </span>
                                 </li>
                                 <li>
-                                    <p class="testi-text">"Sed fringilla sem sed massa ullamcorper, vitae rutrum justo sodales. Cras sed iaculis enim. Sed aliquet viverra nisl a tristique. Curabitur vitae mauris sem. Pellentesque iaculis nibh leo, mattis aliquet arcu tincidunt at."<p>
-                                        <span class="testi-person">John terry - company inc  </span>
-                                </li>
-                                <li>
-                                    <p class="testi-text">"Cras adipiscing odio nunc, non laoreet urna suscipit ac. Pellentesque congue egestas risus viverra pharetra. Morbi pretium orci magna, vitae mattis nisl viverra eleifend. Vestibulum euismod erat non ligula hendrerit tincidunt."<p>
-                                        <span class="testi-person">victoria - company inc </span>
+                                   <p class="testi-text">一家三口美容真是用心又讚！寶貝洗的好乾淨，還跟安親的店長姐姐玩的好高興，真是的讓媽媽安心的好地方！下次財財還是再來！<p>
+                                        <span class="testi-person">財財媽媽 留  </span>
                                 </li>
                             </ul>
                         </div>

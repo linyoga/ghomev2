@@ -7,7 +7,7 @@
                             <%=image_tag('slider-1.jpg', class:"img-responsive",alt:"安親DAYCARE")%>
                             <figcaption class="slider-overlay ">
                                 <div class="slider-text animated fadeInDown">
-                                    <h1>安親DAYCARE</h1>
+                                    <h1><%= link_to('安親DAYCARE',daycare_path) %></h1>
                                     <p>不想讓你的寶貝自己在家嗎？</p>
                                     <p class="slide-btn">
                                     <%= link_to('瞭解更多',daycare_path, class: 'btn btn-white btn-lg', id: 'knowmore')%>
@@ -21,7 +21,7 @@
                             <%=image_tag('slider-3.jpg', class:"img-responsive",alt:"住宿HOTEL")%>
                             <figcaption class="slider-overlay">
                                 <div class="slider-text">
-                                    <h1>住宿HOTEL</h1>
+                                    <h1><%= link_to('住宿HOTEL',hotel_path) %></h1>
                                    <p>安全、像家、但是擁有更多同伴。</p>
                                     <p class="slide-btn"><%= link_to("瞭解更多", hotel_path,
                                         class: "btn btn-white btn-lg", id: 'knowmore')%></p>
@@ -34,7 +34,7 @@
                             <%=image_tag('slider-2.jpg', class:"img-responsive",alt:"美容GROOMING")%>
                             <figcaption class="slider-overlay">
                                 <div class="slider-text">
-                                    <h1>美容GROOMING</h1>
+                                    <h1><%= link_to('美容GROOMING',grooming_path) %></h1>
                                     <p>專業的美容師，讓寶貝們更有自信。</p>
                                     <p class="slide-btn"><%= link_to("瞭解更多", grooming_path,
                                         class: "btn btn-white btn-lg", id: 'knowmore')%></p>
@@ -46,14 +46,6 @@
                 </ul>
             </div>
         </section><!--main flex slider end-->
-            <div class="space-50"></div>
-        <div class="cta-bg">
-            <div class="container text-center">
-                <h3>貼心、溫暖、像家。 
-                    <a href="https://linyoga.typeform.com/to/Cry25x" target = "_blank" class="btn btn-lg btn-white btn-radius" id = "reservation1">立即預約</a>
-                </h3>
-            </div>
-        </div>
         <div class="space-70"></div>
 
         <div class="container">
@@ -128,6 +120,7 @@
                 <% end %>
             </div><!--row end-->
         </div><!--container recent news end-->
+
                 <div class="space-70"></div>
         <section id="content-region-2" class="padding-40 parallax-1">
             <div class="container">
@@ -154,7 +147,14 @@
                 </div>
             </div>
         </section> <!--testimonials section end here--> 
-
+                            <div class="space-50"></div>
+        <div class="cta-bg">
+            <div class="container text-center">
+                <h3>貼心、溫暖、像家。 
+                    <a href="https://linyoga.typeform.com/to/Cry25x" target = "_blank" class="btn btn-lg btn-white btn-radius" id = "reservation1">立即預約</a>
+                </h3>
+            </div>
+        </div>
     </body>
 <script type="text/javascript">
   var link = document.getElementById('reservation1');

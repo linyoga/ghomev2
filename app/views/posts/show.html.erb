@@ -12,7 +12,7 @@
                     <h2 class="heading-sec">
                         <%= @post.title %>
                     </h2>
-                    <p><%= @post.content %></p>
+                    <p><%= markdown(@post.content) %></p>
                 </div>
             </div>
         </div><!--full width page end-->

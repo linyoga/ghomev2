@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.order("id DESC")
      set_page_title "安親｜住宿｜美容"
-     set_page_description ("一家三口動物旅館:地址：桃園市桃園區民生路495號之9 ，電話是03-3363252，email：elite.eah@gmail.com，我們提供安親、美容、住宿優質服務。")
+     set_page_description ("一家三口動物旅館提供安親、美容、住宿優質服務。地址：桃園市桃園區民生路495號之9 ，電話：03-3363252，email：elite.eah@gmail.com。")
      set_page_keywords ('一家三口,安親,美容,住宿,寵物,homepage')
   end
 

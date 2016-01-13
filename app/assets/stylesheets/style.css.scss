@@ -117,13 +117,13 @@ input[type='submit'] {
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: #000;
   text-shadow: none;
   background-color: #004b87;
 }
 
 ::selection {
-  color: #fff;
+  color: #000;
   text-shadow: none;
   background-color: #004b87;
 }
@@ -682,7 +682,7 @@ h2.heading-sec {
 }
 
 #content-region-2 {
-  background: #004b87;
+  background: #FCEADB;
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
@@ -1062,6 +1062,15 @@ h4.portfolio-post-title {
   border-radius: 0px;
   border: 2px solid #fff;
 }
+.btn-black {
+  background-color: transparent;
+  color: #004b87;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  border: 2px solid #004b87;
+}
 
 .btn-white:hover {
   background-color: #fff;
@@ -1114,7 +1123,7 @@ h4.portfolio-post-title {
 /**************************************testimonials******************************************/
 .testimonials p.testi-text {
   font-family: "MyFonts";
-  color: #fff;
+  color: #000;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -1122,7 +1131,7 @@ h4.portfolio-post-title {
 
 .testimonials span.testi-person {
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 
 /**********************************************footer*****************************************/
@@ -1135,7 +1144,7 @@ h4.portfolio-post-title {
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #fff;
+  color: #004b87;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
@@ -1146,7 +1155,7 @@ h4.portfolio-post-title {
 
 .footer-col p {
   font-size: 14px;
-  color: #fff;
+  color: #000;
 }
 
 .post-list li a {
@@ -1223,6 +1232,40 @@ h4.portfolio-post-title {
 /****************breadcrumbs*********************************************/
 .page-tree-bg {
   background-color: #2EA9DF;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-tree-bg-daycare {
+  background-color: #fbdb65;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-tree-bg-hotel {
+  background-color: #8CE8DD;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page-tree-bg-grooming {
+  background-color: #FEDFE1;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page-tree-bg-about {
+  background-color: #E2A599;
   padding: 100px 0;
   width: 100%;
   position: relative;
@@ -1812,8 +1855,8 @@ a.carousel-control i {
 /**************footer option css here********************/
 #footer-option {
   font-family: "MyFonts";
-  background: #34495e;
-  border-top: 8px solid #004b87;
+  background: #FCEADB;
+  border-top: 8px solid #FCEADB;
   margin-top: 50px;
   padding: 80px 0 0;
   position: relative;
@@ -2097,11 +2140,11 @@ MULTI LEVEL DROPDOWN CSS
 }
 .cta-bg {
   padding: 50px 0;
-  background-color: #004b87;
+  background-color: #FCEADB;
 }
 
 .cta-bg h3 {
-  color: #fff;
+  color: #004b87;
   text-transform: uppercase;
   font-weight: 300;
 }

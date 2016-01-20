@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'sitemap_generator'
 SitemapGenerator::Sitemap.default_host = "https://www.ghanimalcasa.com"
-SitemapGenerator::Sitemap.public_path = 'tmp/sitemaps/'
+SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
 SitemapGenerator::Sitemap.create do
 
     add '/index',:changefreq => 'daily', :priority => 0.9

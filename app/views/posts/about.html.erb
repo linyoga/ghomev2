@@ -63,9 +63,9 @@
                 </div><!--person col end-->
                  <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
-                        <%=image_tag('daycare-1.jpg', class:"img-responsive",alt:"住宿部-狗狗區")%>
+                        <%= link_to image_tag('daycare-1.jpg', class:"img-responsive",alt:"住宿部-狗狗區"), hotel_path %>
                         <div class="person-desc">
-                            <h3>住宿部-狗狗區</h3>
+                            <h3><%= link_to('住宿部-狗狗區',hotel_path) %></h3>
 
                             <p>
                                 溫暖的裝潢，繽紛的顏色，更重要的是我們的初衷，安全、像家但是擁有更多同伴。
@@ -75,9 +75,9 @@
                 </div>
                  <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
-                        <%=image_tag('hotellife-12.jpg', class:"img-responsive",alt:"住宿部-貓區")%>
+                        <%=link_to image_tag('hotellife-12.jpg', class:"img-responsive",alt:"住宿部-貓區"), hotel_path %>
                         <div class="person-desc">
-                            <h3>住宿部-貓咪區</h3>
+                            <h3><%= link_to('住宿部-貓咪區', hotel_path) %></h3>
 
                             <p>
                                 獨棟的Villa，考量貓咪的習性，讓怕生的貓咪擁有最安心自在的環境。
@@ -87,9 +87,9 @@
                 </div>
                  <div class="col-md-3 col-sm-6 margin-btm-20">
                     <div class="person-section">
-                        <%=image_tag('grooming-3.jpg', class:"img-responsive",alt:"美容部")%>
+                        <%=link_to image_tag('grooming-3.jpg', class:"img-responsive",alt:"美容部"), grooming_path %>
                         <div class="person-desc">
-                            <h3>美容部</h3>
+                            <h3><%= link_to('美容部', grooming_path) %></h3>
 
                             <p>
                                 專業的美容師團隊，讓寶貝美容後更有自信。

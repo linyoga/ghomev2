@@ -33,8 +33,8 @@ gem 'seo_helper', '~> 1.0'
 gem 'sitemap_generator'
 gem 'therubyracer', platforms: :ruby
 gem "skylight"
-gem "sitemap_generator"
 gem 'meta-tags'
+gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

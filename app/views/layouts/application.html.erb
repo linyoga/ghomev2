@@ -17,9 +17,6 @@
 <meta property="og:description" content=" 一家三口動物旅館成立於2015年10月，位於桃園市桃園區民生路上，一家三口是一間安全、健康、溫暖的動物旅館，在這裡提供寵物美容、寵物住宿、寵物安親的服務。地址：桃園市桃園區民生路495號之9 33043，電話是03-3363252，email：elite.eah@gmail.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <html lang="zh">
-<%= render :partial => "common/segment_io" %>
-<%= render :partial => "common/sumome" %>
-<%= render :partial => "common/optimizely" %>
 </head>
 <body>
 <%= render :partial => "common/myfont" %>
@@ -34,6 +31,9 @@
 
   <%= yield :javascripts %>
   <%= render :partial => "common/zopin" %>
+  <%= render :partial => "common/segment_io" %>
+<%= render :partial => "common/sumome" %>
+<%= render :partial => "common/optimizely" %>
          <!--scripts-->
         <script src="/js/jquery.min.js" type="text/javascript"></script>
         <script src="/js/bootstrap.min.js" type="text/javascript"></script>

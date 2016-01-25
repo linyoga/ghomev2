@@ -5,13 +5,6 @@
 $( window ).resize(function() {
     $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
 });
-/* ==============================================
- Sticky Navbar
- =============================================== */
-
-$(document).ready(function() {
-    $(".sticky").sticky({topSpacing: 0});
-});
 
 
 /*=========================*/
@@ -52,25 +45,10 @@ $(window).load(function() {
     });
 });
 
-/*=========================*/
-     /*========Animation on scroll with wow.js====*/
-     /*==========================*/
-     
-   wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        mobile:       true
-      }
-    );
-    wow.init();
-    
+
     /* -------------------
  Parallax Sections
  ---------------------*/
-if (!Modernizr.touch) {
-    $('.parallax-1').parallax("50%", 0.5);
-    $('.page-tree-bg').parallax("50%", 0.5);
-}
+
 
 

@@ -6,6 +6,7 @@
   <%= render_page_keywords_meta_tag %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= render :partial => "common/segment_io" %>
+  <%= render :partial => "common/zopin" %>
   <%= csrf_meta_tags %>
   <meta property="og:title" content="寵物安親｜寵物住宿｜寵物美容 | 一家三口動物旅館" />
 <meta property="og:site_name" content="寵物安親｜寵物住宿｜寵物美容 | 一家三口動物旅館" />
@@ -32,8 +33,7 @@
   <%= javascript_include_tag "application" %>
 
   <%= yield :javascripts %>
-  <%= render :partial => "common/zopin" %>
-  <%= render :partial => "common/sumome" %>
+   <%= render :partial => "common/sumome" %>
   <%= render :partial => "common/optimizely" %>
          <!--scripts-->
         <script src="/js/jquery.min.js" type="text/javascript"></script>

@@ -18,6 +18,6 @@
 config/database.yml
 config/secrets.yml
 config/config.yml
-config/initializers/instagram.rb
+/config/initializers/instagram.rb
 .DS_store
 config/application.yml
